@@ -1,0 +1,30 @@
+========== 4.1 Comprender la organización y su contexto Cumple 1/1 ==========
+4.1 Comprender la organización y su contexto Descripción del control La organización debe determinar los aspectos externos e internos que son relevantes para su propósito y que afectan a su capacidad para lograr el resultado deseado(s) de su sistema de gestión de seguridad de la información. Nota: La determinación de estos aspectos se refiere a establecer el contexto externo e interno de la organización considerada en el inciso 5.3 de la NMX-SAST-31000-IMNC-2018. Documento final de la Política de SGSI
+
+
+========== Comprender la organización y su contexto ==========
+4.2 Entendimiento de las necesidades y expectativas de las partes interesadas Descripción del control La organización debe determinar: a) las partes interesadas que son relevantes al Sistema de Gestión de Seguridad de la Información y; b) los requisitos relevantes de estas partes interesadas; Nota: Los requisitos de las partes interesadas pueden incluir los requisitos legales y reglamentarios y las obligaciones contractuales. c) cuáles de estos requisitos se abordan a través del sistema de gestión de seguridad de información. Documento final de la Política de SGSI
+
+
+========== 4.2 Entendimiento de las necesidades y expectativas de las partes interesadas Cumple 1/1 ==========
+4.1 Comprender la organización y su contexto Descripción del control La organización debe determinar los aspectos externos e internos que son relevantes para su propósito y que afectan a su capacidad para lograr el resultado deseado(s) de su sistema de gestión de seguridad de la información. Nota: La determinación de estos aspectos se refiere a establecer el contexto externo e interno de la organización considerada en el inciso 5.3 de la NMX-SAST-31000-IMNC-2018. Documento final de la Política de SGSI
+
+
+========== Entendimiento de las necesidades y expectativas de las partes interesadas ==========
+4.2 Entendimiento de las necesidades y expectativas de las partes interesadas Descripción del control La organización debe determinar: a) las partes interesadas que son relevantes al Sistema de Gestión de Seguridad de la Información y; b) los requisitos relevantes de estas partes interesadas; Nota: Los requisitos de las partes interesadas pueden incluir los requisitos legales y reglamentarios y las obligaciones contractuales. c) cuáles de estos requisitos se abordan a través del sistema de gestión de seguridad de información. Documento final de la Política de SGSI
+
+
+========== 4.3 Determinación del alcance del Sistema de Gestión de Seguridad de la Información Cumple 2/2 ==========
+4.3 Determinación del alcance del Sistema de Gestión de Seguridad de la Información Descripción del control La organización debe determinar los límites y la aplicabilidad del Sistema de Gestión de Seguridad de la Información para establecer su alcance. Al determinar el alcance, la organización debe considerar: a) los aspectos externos e internos referidos en el inciso 4.1; b) los requisitos referidos en el inciso 4.2 y; c) las interfaces y las dependencias entre las actividades realizadas por la organización, y las que se realizan por otras organizaciones. El alcance debe estar disponible como información documentada. Documento final de la Política de SGSI Enunciado final del alcance del SGSI
+
+
+========== Determinación del alcance del Sistema de Gestión de Seguridad de la Información ==========
+4.3 Determinación del alcance del Sistema de Gestión de Seguridad de la Información Descripción del control La organización debe determinar los límites y la aplicabilidad del Sistema de Gestión de Seguridad de la Información para establecer su alcance. Al determinar el alcance, la organización debe considerar: a) los aspectos externos e internos referidos en el inciso 4.1; b) los requisitos referidos en el inciso 4.2 y; c) las interfaces y las dependencias entre las actividades realizadas por la organización, y las que se realizan por otras organizaciones. El alcance debe estar disponible como información documentada. Documento final de la Política de SGSI Enunciado final del alcance del SGSI
+
+
+========== 4.4 Sistema de Gestión de Seguridad de la Información Cumple 1/1 ==========
+4.4 Sistema de Gestión de Seguridad de la Información Descripción del control La organización debe establecer, implementar, mantener y mejorar continuamente un Sistema de Gestión de Seguridad de la Información, incluyendo los procesos necesarios y sus interacciones, de acuerdo con los requisitos de este Proyecto de Norma Mexicana. Documento final de la Política de SGSI
+
+
+========== Sistema de Gestión de Seguridad de la Información ==========
+4.4 Sistema de Gestión de Seguridad de la Información Descripción del control La organización debe establecer, implementar, mantener y mejorar continuamente un Sistema de Gestión de Seguridad de la Información, incluyendo los procesos necesarios y sus interacciones, de acuerdo con los requisitos de este Proyecto de Norma Mexicana. Documento final de la Política de SGSI

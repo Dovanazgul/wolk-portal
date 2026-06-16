@@ -1,0 +1,270 @@
+========== A.8.1 Dispositivos de punto final de usuario Cumple 13/13 ==========
+Descripción del control La información almacenada, procesada o accesible a través de los dispositivos de punto final del usuario es conveniente este protegida. Documento final de la Política de Seguridad de la Información Documento final de la Política de BYOD Documento final de la Política de Escritorios Limpios Documento final de la Política de Tecnología y Operaciones de TI Evidencia del tiempo de bloqueo de la pantalla de los equipos Evidencia de la separación de cuentas y/o usuarios en el equipo, de manera que se utilice un usuario específico para las labores de trabajo Evidencia de que se cuenten con inicio de sesión seguro al equipo por medio de contraseña, PIN, reconocimiento facial, o algo similar Módulo de Dispositivos Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de comunicación de la Política de BYOD Evidencia de comunicación de la Política de Escritorios Limpios Evidencia de comunicación de la Política de Tecnología y Operaciones de TI PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Dispositivos de punto final de usuario ==========
+Descripción del control La información almacenada, procesada o accesible a través de los dispositivos de punto final del usuario es conveniente este protegida. Documento final de la Política de Seguridad de la Información Documento final de la Política de BYOD Documento final de la Política de Escritorios Limpios Documento final de la Política de Tecnología y Operaciones de TI Evidencia del tiempo de bloqueo de la pantalla de los equipos Evidencia de la separación de cuentas y/o usuarios en el equipo, de manera que se utilice un usuario específico para las labores de trabajo Evidencia de que se cuenten con inicio de sesión seguro al equipo por medio de contraseña, PIN, reconocimiento facial, o algo similar Módulo de Dispositivos Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de comunicación de la Política de BYOD Evidencia de comunicación de la Política de Escritorios Limpios Evidencia de comunicación de la Política de Tecnología y Operaciones de TI PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.8.2 Derechos de acceso privilegiado Cumple 4/4 ==========
+A.8.2 Derechos de acceso privilegiado Descripción del control La asignación y el uso de los derechos de acceso privilegiado deberían restringirse y gestionarse. Documento final del Procedimiento de Gestión de Accesos Evidencia de la solicitud de accesos y/o permisos para un usuario administrador Evidencia de los usuarios administradores registrados en el módulo de Accesos Evidencia de que los sistemas cuenten con los usuarios administradores necesarios
+
+
+========== Derechos de acceso privilegiado ==========
+A.8.2 Derechos de acceso privilegiado Descripción del control La asignación y el uso de los derechos de acceso privilegiado deberían restringirse y gestionarse. Documento final del Procedimiento de Gestión de Accesos Evidencia de la solicitud de accesos y/o permisos para un usuario administrador Evidencia de los usuarios administradores registrados en el módulo de Accesos Evidencia de que los sistemas cuenten con los usuarios administradores necesarios
+
+
+========== A.8.3 Restricción de acceso a la información Cumple 2/2 ==========
+A.8.3 Restricción de acceso a la información Descripción del control El acceso a la información y otros activos asociados se recomienda restringir de conformidad con la política de control de acceso sobre temas específicos establecidos. Documento final de la Política de Seguridad de la Información Evidencia de la última versión de la información en el Módulo de Accesos
+
+
+========== Restricción de acceso a la información ==========
+A.8.3 Restricción de acceso a la información Descripción del control El acceso a la información y otros activos asociados se recomienda restringir de conformidad con la política de control de acceso sobre temas específicos establecidos. Documento final de la Política de Seguridad de la Información Evidencia de la última versión de la información en el Módulo de Accesos
+
+
+========== A.8.4 Acceso al código fuente Cumple 1/1 ==========
+A.8.4 Acceso al código fuente Descripción del control Se recomienda que el acceso de lectura y escritura al código fuente, las herramientas de desarrollo y las bibliotecas de software se administren adecuadamente. Evidencia de la asignación de accesos a las herramientas de desarrollo y repositorios de código en el módulo de Accesos
+
+
+========== Acceso al código fuente ==========
+A.8.4 Acceso al código fuente Descripción del control Se recomienda que el acceso de lectura y escritura al código fuente, las herramientas de desarrollo y las bibliotecas de software se administren adecuadamente. Evidencia de la asignación de accesos a las herramientas de desarrollo y repositorios de código en el módulo de Accesos
+
+
+========== A.8.5 Autenticación segura Cumple 4/4 ==========
+A.8.5 Autenticación segura Descripción del control Las tecnologías y procedimientos de autenticación segura se sugiere implementar en función de las restricciones de acceso a la información y la política específica del tema sobre el control de acceso. Evidencia del uso de 2FA en los sistemas Evidencia de la configuración en sistemas para la generación de contraseñas seguras (longitud, cáracteres, duración, vigencia, etcétera) Evidencia del uso de autenticación biométrica (huellas dactilares, reconocimiento facial, etcétera) Evidencia de las configuraciones generales del inicio de sesión
+
+
+========== Autenticación segura ==========
+A.8.5 Autenticación segura Descripción del control Las tecnologías y procedimientos de autenticación segura se sugiere implementar en función de las restricciones de acceso a la información y la política específica del tema sobre el control de acceso. Evidencia del uso de 2FA en los sistemas Evidencia de la configuración en sistemas para la generación de contraseñas seguras (longitud, cáracteres, duración, vigencia, etcétera) Evidencia del uso de autenticación biométrica (huellas dactilares, reconocimiento facial, etcétera) Evidencia de las configuraciones generales del inicio de sesión
+
+
+========== A.8.6 Gestión de la capacidad Cumple parcialmente 2/4 ==========
+A.8.6 Gestión de la capacidad Descripción del control El uso de los recursos se sugiere supervisarse y ajustarse de conformidad con las necesidades de capacidad actuales y previstas. Documento final de la Política de Tecnología y Operaciones de TI Reportes de proyección de capacidad Evidencia del uso de herramientas de autoscaling Evidencia de alertas de monitoreo de capacidad
+
+
+========== Gestión de la capacidad ==========
+A.8.6 Gestión de la capacidad Descripción del control El uso de los recursos se sugiere supervisarse y ajustarse de conformidad con las necesidades de capacidad actuales y previstas. Documento final de la Política de Tecnología y Operaciones de TI Reportes de proyección de capacidad Evidencia del uso de herramientas de autoscaling Evidencia de alertas de monitoreo de capacidad
+
+
+========== A.8.7 Protección contra el malware Cumple 1/1 ==========
+A.8.7 Protección contra el malware Descripción del control Es conveniente que la protección contra el malware se implemente y estar respaldada por la conciencia adecuada del usuario. Evidencia de la instalación y configuración de la herramienta antimalware/antivirus
+
+
+========== Protección contra el malware ==========
+A.8.7 Protección contra el malware Descripción del control Es conveniente que la protección contra el malware se implemente y estar respaldada por la conciencia adecuada del usuario. Evidencia de la instalación y configuración de la herramienta antimalware/antivirus
+
+
+========== A.8.8 Gestión de vulnerabilidades técnicas Cumple parcialmente 6/8 ==========
+A.8.8 Gestión de vulnerabilidades técnicas Descripción del control Es conveniente obtener información sobre las vulnerabilidades técnicas de los sistemas de información en uso, evaluarse la exposición de la organización a esas vulnerabilidades y adoptarse las medidas apropiadas. Documento final de la Política de Tecnología y Operaciones de TI Documento final del Procedimiento de Gestión de Vulnerabilidades Documento final del Plan de Remediación de Vulnerabilidades Reportes de Ethical Hacking Reportes de "certificación", retests de los Ethical Hacking Evidencia de escaneos de vulnerabilidades con herramientas especializadas Evidencia de la aplicación de parches de seguridad Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001
+
+
+========== Gestión de vulnerabilidades técnicas ==========
+A.8.8 Gestión de vulnerabilidades técnicas Descripción del control Es conveniente obtener información sobre las vulnerabilidades técnicas de los sistemas de información en uso, evaluarse la exposición de la organización a esas vulnerabilidades y adoptarse las medidas apropiadas. Documento final de la Política de Tecnología y Operaciones de TI Documento final del Procedimiento de Gestión de Vulnerabilidades Documento final del Plan de Remediación de Vulnerabilidades Reportes de Ethical Hacking Reportes de "certificación", retests de los Ethical Hacking Evidencia de escaneos de vulnerabilidades con herramientas especializadas Evidencia de la aplicación de parches de seguridad Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001
+
+
+========== A.8.9 Gestión de la configuración Cumple parcialmente 1/2 ==========
+A.8.9 Gestión de la configuración Descripción del control Se recomienda que las configuraciones, incluidas las configuraciones de seguridad, de hardware, software, servicios y redes establezcan, documenten, implementen, supervisen y revisen. Documento final de la Documentación de Hardening Documentos de hardening de otros proveedores o industrias
+
+
+========== Gestión de la configuración ==========
+A.8.9 Gestión de la configuración Descripción del control Se recomienda que las configuraciones, incluidas las configuraciones de seguridad, de hardware, software, servicios y redes establezcan, documenten, implementen, supervisen y revisen. Documento final de la Documentación de Hardening Documentos de hardening de otros proveedores o industrias
+
+
+========== A.8.10 Eliminación de la información Cumple parcialmente 3/4 ==========
+A.8.10 Eliminación de la información Descripción del control La información almacenada en sistemas de información, dispositivos o en cualquier otro medio de almacenamiento debería eliminarse cuando ya no sea necesaria. Documento final de la Política de Seguridad de la Información Documento final de la Política de Tratamiento de la Información Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de la eliminación y/o registro de eliminación de información
+
+
+========== Eliminación de la información ==========
+A.8.10 Eliminación de la información Descripción del control La información almacenada en sistemas de información, dispositivos o en cualquier otro medio de almacenamiento debería eliminarse cuando ya no sea necesaria. Documento final de la Política de Seguridad de la Información Documento final de la Política de Tratamiento de la Información Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de la eliminación y/o registro de eliminación de información
+
+
+========== A.8.11 Enmascaramiento de datos Cumple parcialmente 1/2 ==========
+A.8.11 Enmascaramiento de datos Descripción del control El enmascaramiento de datos se sugiere utilizar de acuerdo con la política específica del tema de la organización sobre control de acceso y otras políticas relacionadas con temas específicos, y los requisitos comerciales, teniendo en cuenta la legislación aplicable. Documento final del Procedimiento de Anonimización de Datos Personales Evidencia de los mecanismos de anonimización utilizados
+
+
+========== Enmascaramiento de datos ==========
+A.8.11 Enmascaramiento de datos Descripción del control El enmascaramiento de datos se sugiere utilizar de acuerdo con la política específica del tema de la organización sobre control de acceso y otras políticas relacionadas con temas específicos, y los requisitos comerciales, teniendo en cuenta la legislación aplicable. Documento final del Procedimiento de Anonimización de Datos Personales Evidencia de los mecanismos de anonimización utilizados
+
+
+========== A.8.12 Prevención de fuga de datos Cumple 1/1 ==========
+A.8.12 Prevención de fuga de datos Descripción del control Se recomienda que las medidas de prevención de fugas de datos se apliquen a los sistemas, redes y cualquier otro dispositivo que procese, almacene o transmita información confidencial. Documento final de la Política de Seguridad de la Información
+
+
+========== Prevención de fuga de datos ==========
+A.8.12 Prevención de fuga de datos Descripción del control Se recomienda que las medidas de prevención de fugas de datos se apliquen a los sistemas, redes y cualquier otro dispositivo que procese, almacene o transmita información confidencial. Documento final de la Política de Seguridad de la Información
+
+
+========== A.8.13 Copia de seguridad de la información Cumple parcialmente 4/7 ==========
+A.8.13 Copia de seguridad de la información Descripción del control Se recomienda que las copias de seguridad de la información, el software y los sistemas se mantengan y prueben periódicamente de conformidad con la política acordada sobre copias de seguridad sobre el tema específico. Documento final de la Política de Tecnología y Operaciones de TI Documento final del Procedimiento de Gestión de Backups Evidencia del cronograma o planificación de generación de respaldos Evidencia de copias de seguridad generadas dentro de los sistemas Evidencia de la periodicidad de generación de respaldos configurada en los sistemas Evidencia de alguna alerta sobre un respaldo mal generado, o algo similar Evidencia de la aplicación de pruebas de restauración a las copias de seguridad
+
+
+========== Copia de seguridad de la información ==========
+A.8.13 Copia de seguridad de la información Descripción del control Se recomienda que las copias de seguridad de la información, el software y los sistemas se mantengan y prueben periódicamente de conformidad con la política acordada sobre copias de seguridad sobre el tema específico. Documento final de la Política de Tecnología y Operaciones de TI Documento final del Procedimiento de Gestión de Backups Evidencia del cronograma o planificación de generación de respaldos Evidencia de copias de seguridad generadas dentro de los sistemas Evidencia de la periodicidad de generación de respaldos configurada en los sistemas Evidencia de alguna alerta sobre un respaldo mal generado, o algo similar Evidencia de la aplicación de pruebas de restauración a las copias de seguridad
+
+
+========== A.8.14 Redundancia de las instalaciones de procesamiento de información Cumple 4/4 ==========
+A.8.14 Redundancia de las instalaciones de procesamiento de información Descripción del control Las instalaciones de procesamiento de información se sugiere se implementen con redundancia suficiente para cumplir con los requisitos de disponibilidad. Documento final del Plan de Recuperación ante Desastres Documento final del Plan de Continuidad Documento final del Diagrama de Infraestructura Evidencia de la configuración de la redudancia o de las múltiples instancias en el sistema
+
+
+========== Redundancia de las instalaciones de procesamiento de información ==========
+A.8.14 Redundancia de las instalaciones de procesamiento de información Descripción del control Las instalaciones de procesamiento de información se sugiere se implementen con redundancia suficiente para cumplir con los requisitos de disponibilidad. Documento final del Plan de Recuperación ante Desastres Documento final del Plan de Continuidad Documento final del Diagrama de Infraestructura Evidencia de la configuración de la redudancia o de las múltiples instancias en el sistema
+
+
+========== A.8.15 Registro Cumple parcialmente 2/4 ==========
+A.8.15 Registro Descripción del control Los registros que registran actividades, excepciones, fallas y otros eventos relevantes se sugiere se produzcan, almacenen, protejan y analicen. Documento final de la Política de Gestión de Logs Documento final del Procedimiento de Gestión de Logs Evidencia del uso de un SIEM Evidencia de los tipos de eventos que generan registro en los sistemas
+
+
+========== Registro ==========
+A.8.15 Registro Descripción del control Los registros que registran actividades, excepciones, fallas y otros eventos relevantes se sugiere se produzcan, almacenen, protejan y analicen. Documento final de la Política de Gestión de Logs Documento final del Procedimiento de Gestión de Logs Evidencia del uso de un SIEM Evidencia de los tipos de eventos que generan registro en los sistemas
+
+
+========== A.8.16 Actividades de seguimiento Cumple parcialmente 7/8 ==========
+A.8.16 Actividades de seguimiento Descripción del control Las redes, los sistemas y las aplicaciones es conveniente sean monitoreados para detectar comportamientos anómalos y se sugiere tomar las medidas apropiadas para evaluar posibles incidentes de seguridad de la información. Documento final de la Política de Gestión de Logs Documento final del Procedimiento de Gestión de Logs Módulo de Seguridad de Dominios Módulo de Seguridad de Apps Evidencia del uso de un SIEM Evidencia de las alertas que se tienen configuradas para los eventos del sistema Evidencia de servicios de monitoreo de logs PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Actividades de seguimiento ==========
+A.8.16 Actividades de seguimiento Descripción del control Las redes, los sistemas y las aplicaciones es conveniente sean monitoreados para detectar comportamientos anómalos y se sugiere tomar las medidas apropiadas para evaluar posibles incidentes de seguridad de la información. Documento final de la Política de Gestión de Logs Documento final del Procedimiento de Gestión de Logs Módulo de Seguridad de Dominios Módulo de Seguridad de Apps Evidencia del uso de un SIEM Evidencia de las alertas que se tienen configuradas para los eventos del sistema Evidencia de servicios de monitoreo de logs PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.8.17 Sincronización del reloj Cumple parcialmente 1/2 ==========
+A.8.17 Sincronización del reloj Descripción del control Los relojes de los sistemas de procesamiento de información utilizados por la organización se sugiere sincronizar con las fuentes de tiempo aprobadas. Documento final de la Política de Gestión de Logs Evidencia del NTP utilizado para la sincronización de relojes
+
+
+========== Sincronización del reloj ==========
+A.8.17 Sincronización del reloj Descripción del control Los relojes de los sistemas de procesamiento de información utilizados por la organización se sugiere sincronizar con las fuentes de tiempo aprobadas. Documento final de la Política de Gestión de Logs Evidencia del NTP utilizado para la sincronización de relojes
+
+
+========== A.8.18 Uso de programas de utilidad privilegiados Cumple 2/2 ==========
+A.8.18 Uso de programas de utilidad privilegiados Descripción del control El uso de programas de utilidad que pueden ser capaces de anular los controles del sistema y la aplicación debería restringirse y controlarse estrictamente. Evidencia de la última versión de la información en el Módulo de Accesos Evidencia de la restricción de estos programas dentro del sistema operativo utilizado
+
+
+========== Uso de programas de utilidad privilegiados ==========
+A.8.18 Uso de programas de utilidad privilegiados Descripción del control El uso de programas de utilidad que pueden ser capaces de anular los controles del sistema y la aplicación debería restringirse y controlarse estrictamente. Evidencia de la última versión de la información en el Módulo de Accesos Evidencia de la restricción de estos programas dentro del sistema operativo utilizado
+
+
+========== A.8.19 Instalación de software en sistemas operativos Cumple parcialmente 3/4 ==========
+A.8.19 Instalación de software en sistemas operativos Descripción del control Se sugiere implementar procedimientos y medidas para administrar de forma segura la instalación de software en los sistemas operativos. Documento final de la Política de Tecnología y Operaciones de TI Evidencia de la instalación de un nuevo software Evidencia de la aplicación de parches de seguridad Evidencia de lista de software permitido dentro de la empresa
+
+
+========== Instalación de software en sistemas operativos ==========
+A.8.19 Instalación de software en sistemas operativos Descripción del control Se sugiere implementar procedimientos y medidas para administrar de forma segura la instalación de software en los sistemas operativos. Documento final de la Política de Tecnología y Operaciones de TI Evidencia de la instalación de un nuevo software Evidencia de la aplicación de parches de seguridad Evidencia de lista de software permitido dentro de la empresa
+
+
+========== A.8.20 Seguridad de redes Cumple 3/3 ==========
+A.8.20 Seguridad de redes Descripción del control Las redes y los dispositivos de red es conveniente estén protegidos, gestionados y controlados para proteger la información en sistemas y aplicaciones. Documento final de la Política de Seguridad de la Información Documento final de la Política de Seguridad por Capas Documento final del Diagrama de Infraestructura
+
+
+========== Seguridad de redes ==========
+A.8.20 Seguridad de redes Descripción del control Las redes y los dispositivos de red es conveniente estén protegidos, gestionados y controlados para proteger la información en sistemas y aplicaciones. Documento final de la Política de Seguridad de la Información Documento final de la Política de Seguridad por Capas Documento final del Diagrama de Infraestructura
+
+
+========== A.8.21 Seguridad de los servicios de red Cumple parcialmente 2/3 ==========
+A.8.21 Seguridad de los servicios de red Descripción del control Se recomienda identificar, implementar y supervisar los mecanismos de seguridad, los niveles de servicio y los requisitos de servicio de los servicios de red. Evidencia del uso de una VPN Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de protocolos como SSL/TLS, HTTPS, etcétera
+
+
+========== Seguridad de los servicios de red ==========
+A.8.21 Seguridad de los servicios de red Descripción del control Se recomienda identificar, implementar y supervisar los mecanismos de seguridad, los niveles de servicio y los requisitos de servicio de los servicios de red. Evidencia del uso de una VPN Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de protocolos como SSL/TLS, HTTPS, etcétera
+
+
+========== A.8.22 Segregación de redes Cumple parcialmente 2/3 ==========
+A.8.22 Segregación de redes Descripción del control Los grupos de servicios de información, usuarios y sistemas de información se recomienda estén segregados en las redes de la organización. Documento final del Diagrama de Infraestructura Evidencia del uso de un WAF Evidencia de los certificados de la página web
+
+
+========== Segregación de redes ==========
+A.8.22 Segregación de redes Descripción del control Los grupos de servicios de información, usuarios y sistemas de información se recomienda estén segregados en las redes de la organización. Documento final del Diagrama de Infraestructura Evidencia del uso de un WAF Evidencia de los certificados de la página web
+
+
+========== A.8.23 Filtrado web Cumple 2/2 ==========
+A.8.23 Filtrado web Descripción del control El acceso a sitios web externos se sugiere gestionar para reducir la exposición a contenido malicioso. Documento final de la Política de Seguridad de la Información Evidencia de bloqueo de direcciones IP o dominios de sitios web sospechosos / maliciosos
+
+
+========== Filtrado web ==========
+A.8.23 Filtrado web Descripción del control El acceso a sitios web externos se sugiere gestionar para reducir la exposición a contenido malicioso. Documento final de la Política de Seguridad de la Información Evidencia de bloqueo de direcciones IP o dominios de sitios web sospechosos / maliciosos
+
+
+========== A.8.24 Uso de la criptografía Cumple parcialmente 3/6 ==========
+A.8.24 Uso de la criptografía Descripción del control Se sugiere definirse e implementarse reglas para el uso efectivo de la criptografía, incluida la administración de claves criptográficas. Documento final de la Política de Seguridad de la Información Documento final del Procedimiento de Gestión de Claves Públicas / Privadas Evidencia del uso de los métodos criptográficos Evidencia del monitoreo de gestión de claves Evidencia del uso de herramientas de gestión de claves, como AWS KMS de Amazon Evidencia de una solicitud reciente de claves criptográficas
+
+
+========== Uso de la criptografía ==========
+A.8.24 Uso de la criptografía Descripción del control Se sugiere definirse e implementarse reglas para el uso efectivo de la criptografía, incluida la administración de claves criptográficas. Documento final de la Política de Seguridad de la Información Documento final del Procedimiento de Gestión de Claves Públicas / Privadas Evidencia del uso de los métodos criptográficos Evidencia del monitoreo de gestión de claves Evidencia del uso de herramientas de gestión de claves, como AWS KMS de Amazon Evidencia de una solicitud reciente de claves criptográficas
+
+
+========== A.8.25 Ciclo de vida de desarrollo seguro Cumple parcialmente 7/9 ==========
+A.8.25 Ciclo de vida de desarrollo seguro Descripción del control Se recomienda establecer y aplicarse normas para el desarrollo seguro de programas informáticos y sistemas. Documento final de la Política de Desarrollo Seguro Documento final de la Metodología de Ciclo de Vida de Desarrollo Evidencia de aprobación de la Metodología de Ciclo de Vida de Desarrollo Evidencia de comunicación de la Metodología de Ciclo de Vida de Desarrollo Documento final del Procedimiento de Gestión de Cambios Productivos Certificados de participación a la Capacitación de Desarrollo Seguro Evidencia de una solicitud de cambios Evidencia de aprobación de un cambio Evidencia que se que haya aplicado un proceso de rollback
+
+
+========== Ciclo de vida de desarrollo seguro ==========
+A.8.25 Ciclo de vida de desarrollo seguro Descripción del control Se recomienda establecer y aplicarse normas para el desarrollo seguro de programas informáticos y sistemas. Documento final de la Política de Desarrollo Seguro Documento final de la Metodología de Ciclo de Vida de Desarrollo Evidencia de aprobación de la Metodología de Ciclo de Vida de Desarrollo Evidencia de comunicación de la Metodología de Ciclo de Vida de Desarrollo Documento final del Procedimiento de Gestión de Cambios Productivos Certificados de participación a la Capacitación de Desarrollo Seguro Evidencia de una solicitud de cambios Evidencia de aprobación de un cambio Evidencia que se que haya aplicado un proceso de rollback
+
+
+========== A.8.26 Requisitos de seguridad de las aplicaciones Cumple 4/4 ==========
+A.8.26 Requisitos de seguridad de las aplicaciones Descripción del control Se sugiere que los requisitos de seguridad de la información se identifiquen, especifiquen y aprueben al desarrollar o adquirir aplicaciones. Documento final de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas Evidencia de aplicación de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas en más de un proyecto / servicio / sistema Evidencia de aprobación de la Guía de seguridad en el desarrollo y mantenimiento de sistemas Evidencia de comunicación de la Guía de seguridad en el desarrollo y mantenimiento de sistemas
+
+
+========== Requisitos de seguridad de las aplicaciones ==========
+A.8.26 Requisitos de seguridad de las aplicaciones Descripción del control Se sugiere que los requisitos de seguridad de la información se identifiquen, especifiquen y aprueben al desarrollar o adquirir aplicaciones. Documento final de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas Evidencia de aplicación de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas en más de un proyecto / servicio / sistema Evidencia de aprobación de la Guía de seguridad en el desarrollo y mantenimiento de sistemas Evidencia de comunicación de la Guía de seguridad en el desarrollo y mantenimiento de sistemas
+
+
+========== A.8.27 Arquitectura de sistemas seguros y principios de ingeniería Cumple 2/2 ==========
+A.8.27 Arquitectura de sistemas seguros y principios de ingeniería Descripción del control Se recomienda que los principios para la ingeniería de sistemas seguros establezca, documente, mantenga y aplique a cualquier actividad de desarrollo de sistemas de información. Documento final de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas Evidencia de aplicación de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas en más de un proyecto / servicio / sistema
+
+
+========== Arquitectura de sistemas seguros y principios de ingeniería ==========
+A.8.27 Arquitectura de sistemas seguros y principios de ingeniería Descripción del control Se recomienda que los principios para la ingeniería de sistemas seguros establezca, documente, mantenga y aplique a cualquier actividad de desarrollo de sistemas de información. Documento final de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas Evidencia de aplicación de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas en más de un proyecto / servicio / sistema
+
+
+========== A.8.28 Codificación segura Cumple 2/2 ==========
+A.8.28 Codificación segura Descripción del control Los principios de codificación segura se sugiere aplicar al desarrollo de software. Documento final de la Política de Desarrollo Seguro Documento final de la Metodología de Ciclo de Vida de Desarrollo
+
+
+========== Codificación segura ==========
+A.8.28 Codificación segura Descripción del control Los principios de codificación segura se sugiere aplicar al desarrollo de software. Documento final de la Política de Desarrollo Seguro Documento final de la Metodología de Ciclo de Vida de Desarrollo
+
+
+========== A.8.29 Pruebas de seguridad en desarrollo y aceptación Cumple parcialmente 2/4 ==========
+A.8.29 Pruebas de seguridad en desarrollo y aceptación Descripción del control Es conveniente que los procesos de pruebas de seguridad se definan e implementen en el ciclo de vida del desarrollo. Documento final de la Política de Desarrollo Seguro Documento final de la Metodología de Ciclo de Vida de Desarrollo Evidencia de un plan de pruebas al desarrollo aplicado Evidencia de escaneos de código con herramientas especializadas
+
+
+========== Pruebas de seguridad en desarrollo y aceptación ==========
+A.8.29 Pruebas de seguridad en desarrollo y aceptación Descripción del control Es conveniente que los procesos de pruebas de seguridad se definan e implementen en el ciclo de vida del desarrollo. Documento final de la Política de Desarrollo Seguro Documento final de la Metodología de Ciclo de Vida de Desarrollo Evidencia de un plan de pruebas al desarrollo aplicado Evidencia de escaneos de código con herramientas especializadas
+
+
+========== A.8.30 Desarrollo externalizado Cumple parcialmente 2/3 ==========
+A.8.30 Desarrollo externalizado Descripción del control Se recomienda que la organización dirija, supervise y revise las actividades relacionadas con el desarrollo de sistemas subcontratados. Documento final de la Política de Desarrollo Seguro Evidencia de las buenas prácticas, metodologías, medidas de seguridad, etcétera que aplica el proveedor de desarrollo Contratos / Términos y condiciones con proveedores
+
+
+========== Desarrollo externalizado ==========
+A.8.30 Desarrollo externalizado Descripción del control Se recomienda que la organización dirija, supervise y revise las actividades relacionadas con el desarrollo de sistemas subcontratados. Documento final de la Política de Desarrollo Seguro Evidencia de las buenas prácticas, metodologías, medidas de seguridad, etcétera que aplica el proveedor de desarrollo Contratos / Términos y condiciones con proveedores
+
+
+========== A.8.31 Separación de entornos de desarrollo, prueba y producción Cumple 1/1 ==========
+A.8.31 Separación de entornos de desarrollo, prueba y producción Descripción del control Los entornos de desarrollo, pruebas y producción es conveniente estén separados y protegidos. Documento final del Diagrama de Infraestructura
+
+
+========== Separación de entornos de desarrollo, prueba y producción ==========
+A.8.31 Separación de entornos de desarrollo, prueba y producción Descripción del control Los entornos de desarrollo, pruebas y producción es conveniente estén separados y protegidos. Documento final del Diagrama de Infraestructura
+
+
+========== A.8.32 Gestión del cambio Cumple parcialmente 4/6 ==========
+A.8.32 Gestión del cambio Descripción del control Los cambios en las instalaciones de procesamiento de información y los sistemas de información se sugiere estén sujetos a procedimientos de gestión de cambios. Documento final de la Política de Tecnología y Operaciones de TI Documento final del Procedimiento de Gestión de Cambios Productivos Evidencia de una solicitud de cambios Evidencia de aprobación de un cambio Evidencia del histórico de versiones y cambios realizados en las instalaciones de procesamiento o sistemas de información PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Gestión del cambio ==========
+A.8.32 Gestión del cambio Descripción del control Los cambios en las instalaciones de procesamiento de información y los sistemas de información se sugiere estén sujetos a procedimientos de gestión de cambios. Documento final de la Política de Tecnología y Operaciones de TI Documento final del Procedimiento de Gestión de Cambios Productivos Evidencia de una solicitud de cambios Evidencia de aprobación de un cambio Evidencia del histórico de versiones y cambios realizados en las instalaciones de procesamiento o sistemas de información PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.8.33 Información de la prueba Cumple parcialmente 1/2 ==========
+A.8.33 Información de la prueba Descripción del control Se recomienda que la información de la prueba se seleccione, proteja y gestione adecuadamente. Documento final de la Política de Desarrollo Seguro Evidencia de los datos de prueba usados en el desarrollo
+
+
+========== Información de la prueba ==========
+A.8.33 Información de la prueba Descripción del control Se recomienda que la información de la prueba se seleccione, proteja y gestione adecuadamente. Documento final de la Política de Desarrollo Seguro Evidencia de los datos de prueba usados en el desarrollo
+
+
+========== A.8.34 Protección de los sistemas de información durante las pruebas de auditoría Cumple 1/1 ==========
+A.8.34 Protección de los sistemas de información durante las pruebas de auditoría Descripción del control Las pruebas de auditoría y otras actividades de garantía que impliquen la evaluación de los sistemas operativos se sugiere se planifiquen y acuerden entre el probador y la dirección adecuada. Documento final del Plan y Programa de Auditoría
+
+
+========== Protección de los sistemas de información durante las pruebas de auditoría ==========
+A.8.34 Protección de los sistemas de información durante las pruebas de auditoría Descripción del control Las pruebas de auditoría y otras actividades de garantía que impliquen la evaluación de los sistemas operativos se sugiere se planifiquen y acuerden entre el probador y la dirección adecuada. Documento final del Plan y Programa de Auditoría

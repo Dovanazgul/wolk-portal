@@ -1,0 +1,118 @@
+========== ID Punto de control Estado Evidencias ==========
+No se pudo extraer el contenido.
+
+
+========== Punto de control ==========
+No se pudo extraer el contenido.
+
+
+========== A.7.1 Perímetros de seguridad física Cumple 3/3 ==========
+A.7.1 Perímetros de seguridad física Descripción del control Se sugiere que los perímetros de seguridad se definan y utilicen para proteger las áreas que contienen información y otros activos asociados. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del perímetro de seguridad físico aplicado
+
+
+========== Perímetros de seguridad física ==========
+A.7.1 Perímetros de seguridad física Descripción del control Se sugiere que los perímetros de seguridad se definan y utilicen para proteger las áreas que contienen información y otros activos asociados. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del perímetro de seguridad físico aplicado
+
+
+========== A.7.2 Entrada física Cumple 3/3 ==========
+A.7.2 Entrada física Descripción del control Se sugiere que las zonas seguras estén protegidas por controles de entrada y puntos de acceso adecuados. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del control de accesos físico aplicado
+
+
+========== Entrada física ==========
+A.7.2 Entrada física Descripción del control Se sugiere que las zonas seguras estén protegidas por controles de entrada y puntos de acceso adecuados. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del control de accesos físico aplicado
+
+
+========== A.7.3 Asegurar oficinas, habitaciones e instalaciones Cumple 3/3 ==========
+A.7.3 Asegurar oficinas, habitaciones e instalaciones Descripción del control Se recomienda que la seguridad física de las oficinas, salas e instalaciones se diseñe e implemente. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del perímetro de seguridad físico aplicado
+
+
+========== Asegurar oficinas, habitaciones e instalaciones ==========
+A.7.3 Asegurar oficinas, habitaciones e instalaciones Descripción del control Se recomienda que la seguridad física de las oficinas, salas e instalaciones se diseñe e implemente. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del perímetro de seguridad físico aplicado
+
+
+========== A.7.4 Supervisión de la seguridad física Cumple 3/3 ==========
+A.7.4 Supervisión de la seguridad física Descripción del control Es conveniente que las instalaciones sean monitoreadas continuamente para detectar accesos físicos no autorizados. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de la existencia de cámaras de seguridad, alarmas, sensores, etcétera para vigilancia de las oficinas e instalaciones
+
+
+========== Supervisión de la seguridad física ==========
+A.7.4 Supervisión de la seguridad física Descripción del control Es conveniente que las instalaciones sean monitoreadas continuamente para detectar accesos físicos no autorizados. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de la existencia de cámaras de seguridad, alarmas, sensores, etcétera para vigilancia de las oficinas e instalaciones
+
+
+========== A.7.5 Protección contra amenazas físicas y ambientales Cumple 3/3 ==========
+A.7.5 Protección contra amenazas físicas y ambientales Descripción del control Es conveniente diseñar y aplicarse la protección contra las amenazas físicas y ambientales, como los desastres naturales y otras amenazas físicas intencionales o no intencionales a la infraestructura. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de letreros de ruta de evacuación, extintores, señalamientos de emergencia, sensores de humo, etcétera
+
+
+========== Protección contra amenazas físicas y ambientales ==========
+A.7.5 Protección contra amenazas físicas y ambientales Descripción del control Es conveniente diseñar y aplicarse la protección contra las amenazas físicas y ambientales, como los desastres naturales y otras amenazas físicas intencionales o no intencionales a la infraestructura. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de letreros de ruta de evacuación, extintores, señalamientos de emergencia, sensores de humo, etcétera
+
+
+========== A.7.6 Trabajar en áreas seguras Cumple 3/3 ==========
+A.7.6 Trabajar en áreas seguras Descripción del control Se sugiere diseñar e implementar medidas de seguridad para trabajar en áreas seguras. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de la existencia de cámaras de seguridad, de la prohibición de equipos fotográficos o de vídeo, revisión del transporte o equipos que trabajan en estas zonas, etcétera
+
+
+========== Trabajar en áreas seguras ==========
+A.7.6 Trabajar en áreas seguras Descripción del control Se sugiere diseñar e implementar medidas de seguridad para trabajar en áreas seguras. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de la existencia de cámaras de seguridad, de la prohibición de equipos fotográficos o de vídeo, revisión del transporte o equipos que trabajan en estas zonas, etcétera
+
+
+========== A.7.7 Escritorio limpio y pantalla limpia Cumple 3/3 ==========
+A.7.7 Escritorio limpio y pantalla limpia Descripción del control Se recomienda definir y aplicar adecuadamente normas claras de escritorio para papeles y medios de almacenamiento extraíbles y normas de pantalla claras para las instalaciones de procesamiento de información. Documento final de la Política de Escritorios Limpios Evidencia del escritorio limpio de los computadores Evidencia de las revisiones a los escritorios de la oficina
+
+
+========== Escritorio limpio y pantalla limpia ==========
+A.7.7 Escritorio limpio y pantalla limpia Descripción del control Se recomienda definir y aplicar adecuadamente normas claras de escritorio para papeles y medios de almacenamiento extraíbles y normas de pantalla claras para las instalaciones de procesamiento de información. Documento final de la Política de Escritorios Limpios Evidencia del escritorio limpio de los computadores Evidencia de las revisiones a los escritorios de la oficina
+
+
+========== A.7.8 Emplazamiento y protección de equipos Cumple 3/3 ==========
+A.7.8 Emplazamiento y protección de equipos Descripción del control Se sugiere que el equipo este ubicado de forma segura y protegida. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de que los servidores, computadores o cualquier equipo similar se encuentre ubicado adecuadamente para su protección
+
+
+========== Emplazamiento y protección de equipos ==========
+A.7.8 Emplazamiento y protección de equipos Descripción del control Se sugiere que el equipo este ubicado de forma segura y protegida. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de que los servidores, computadores o cualquier equipo similar se encuentre ubicado adecuadamente para su protección
+
+
+========== A.7.9 Seguridad de los bienes fuera de las instalaciones Cumple 3/3 ==========
+A.7.9 Seguridad de los bienes fuera de las instalaciones Descripción del control Es conveniente que los activos fuera del sitio estén protegidos. Documento final de la Política de Seguridad de la Información Documento final de la Política de BYOD Documento final de la Política de Escritorios Limpios
+
+
+========== Seguridad de los bienes fuera de las instalaciones ==========
+A.7.9 Seguridad de los bienes fuera de las instalaciones Descripción del control Es conveniente que los activos fuera del sitio estén protegidos. Documento final de la Política de Seguridad de la Información Documento final de la Política de BYOD Documento final de la Política de Escritorios Limpios
+
+
+========== A.7.10 Medios de almacenamiento Cumple 3/3 ==========
+A.7.10 Medios de almacenamiento Descripción del control Se recomienda que los medios de almacenamiento se gestionen a lo largo de su ciclo de vida de adquisición, uso, transporte y eliminación de acuerdo con el esquema de clasificación y los requisitos de manipulación de la organización. Documento final de la Política de Seguridad de la Información Documento final de la Política de Tratamiento de la Información Documento final del Procedimiento de Transferencia de Información (por medios extraíbles)
+
+
+========== Medios de almacenamiento ==========
+A.7.10 Medios de almacenamiento Descripción del control Se recomienda que los medios de almacenamiento se gestionen a lo largo de su ciclo de vida de adquisición, uso, transporte y eliminación de acuerdo con el esquema de clasificación y los requisitos de manipulación de la organización. Documento final de la Política de Seguridad de la Información Documento final de la Política de Tratamiento de la Información Documento final del Procedimiento de Transferencia de Información (por medios extraíbles)
+
+
+========== A.7.11 Servicios públicos de apoyo Cumple 3/3 ==========
+A.7.11 Servicios públicos de apoyo Descripción del control Las instalaciones de procesamiento de información deberían estar protegidas de fallas de energía y otras interrupciones causadas por fallas en los servicios públicos de soporte. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del mantenimiento aplicado al edificio del suministro eléctrico, de agua, gas, ventilación, aire acondicionado, etcétera
+
+
+========== Servicios públicos de apoyo ==========
+A.7.11 Servicios públicos de apoyo Descripción del control Las instalaciones de procesamiento de información deberían estar protegidas de fallas de energía y otras interrupciones causadas por fallas en los servicios públicos de soporte. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del mantenimiento aplicado al edificio del suministro eléctrico, de agua, gas, ventilación, aire acondicionado, etcétera
+
+
+========== A.7.12 Seguridad del cableado Cumple 3/3 ==========
+A.7.12 Seguridad del cableado Descripción del control Los cables que transportan energía, datos o servicios de información de apoyo deberían estar protegidos contra interceptaciones, interferencias o daños. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de que el cableado (de comunicación o alimentación de energía) esté protegido adecuadamente
+
+
+========== Seguridad del cableado ==========
+A.7.12 Seguridad del cableado Descripción del control Los cables que transportan energía, datos o servicios de información de apoyo deberían estar protegidos contra interceptaciones, interferencias o daños. Contratos de arrendamiento de oficinas, coworks, instalaciones usadas por la empresa Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de que el cableado (de comunicación o alimentación de energía) esté protegido adecuadamente
+
+
+========== A.7.13 Mantenimiento de equipos Cumple 4/4 ==========
+A.7.13 Mantenimiento de equipos Descripción del control Se recomienda que el equipo se mantenga correctamente para garantizar la disponibilidad, integridad y confidencialidad de la información. Documento final de la Política de Seguridad de la Información Documento final de la Política de Tecnología y Operaciones de TI Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de garantías de los equipos, checklist de revisión, o documentos equivalentes del mantenimiento aplicado a los equipos (servidores, computadores, etcétera)
+
+
+========== Mantenimiento de equipos ==========
+A.7.13 Mantenimiento de equipos Descripción del control Se recomienda que el equipo se mantenga correctamente para garantizar la disponibilidad, integridad y confidencialidad de la información. Documento final de la Política de Seguridad de la Información Documento final de la Política de Tecnología y Operaciones de TI Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia de garantías de los equipos, checklist de revisión, o documentos equivalentes del mantenimiento aplicado a los equipos (servidores, computadores, etcétera)
+
+
+========== A.7.14 Eliminación o reutilización segura del equipo Cumple 2/2 ==========
+A.7.14 Eliminación o reutilización segura del equipo Descripción del control Los equipos que contengan medios de almacenamiento se sugiere verificar para garantizar que los datos confidenciales y el software con licencia se hayan eliminado o sobrescrito de forma segura antes de su eliminación o reutilización. Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del saneamiento o destrucción de un equipo
+
+
+========== Eliminación o reutilización segura del equipo ==========
+A.7.14 Eliminación o reutilización segura del equipo Descripción del control Los equipos que contengan medios de almacenamiento se sugiere verificar para garantizar que los datos confidenciales y el software con licencia se hayan eliminado o sobrescrito de forma segura antes de su eliminación o reutilización. Evidencia de las medidas de seguridad aplicadas por el proveedor de nube, o asegurar que dicho proveedor se encuentre certificado en estándares de seguridad como 27001 Evidencia del saneamiento o destrucción de un equipo

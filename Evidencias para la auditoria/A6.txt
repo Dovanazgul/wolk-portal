@@ -1,0 +1,62 @@
+========== A.6.1 Chequeo Cumple 3/3 ==========
+A.6.1 Chequeo Descripción del control Las verificaciones de antecedentes de todos los candidatos para convertirse en personal se sugiere se lleven a cabo antes de unirse a la organización y de forma continúa teniendo en cuenta las leyes, regulaciones y ética aplicables y ser proporcionales a los requisitos comerciales, se recomienda que la clasificación de la información a la que se accede y los riesgos percibidos. Documento final del Procedimiento de Preselección y Selección de Personal Evidencia de aprobación del Procedimiento de Preselección y Selección de Personal Evidencia de la verificación de referencias personales y/o laborales de los candidatos
+
+
+========== Chequeo ==========
+A.6.1 Chequeo Descripción del control Las verificaciones de antecedentes de todos los candidatos para convertirse en personal se sugiere se lleven a cabo antes de unirse a la organización y de forma continúa teniendo en cuenta las leyes, regulaciones y ética aplicables y ser proporcionales a los requisitos comerciales, se recomienda que la clasificación de la información a la que se accede y los riesgos percibidos. Documento final del Procedimiento de Preselección y Selección de Personal Evidencia de aprobación del Procedimiento de Preselección y Selección de Personal Evidencia de la verificación de referencias personales y/o laborales de los candidatos
+
+
+========== A.6.2 Términos y condiciones de empleo Cumple 3/3 ==========
+A.6.2 Términos y condiciones de empleo Descripción del control Es conveniente que los acuerdos contractuales de empleo establezcan las responsabilidades del personal y de la organización para la seguridad de la información. Documento final del Proceso de Contratación y Desvinculación de Personal Contratos / Términos y condiciones con colaboradores W-042-2023 CONTRATO INDIVIDUAL DE TRABAJO ENTRE WOLK IT
+
+
+========== Términos y condiciones de empleo ==========
+A.6.2 Términos y condiciones de empleo Descripción del control Es conveniente que los acuerdos contractuales de empleo establezcan las responsabilidades del personal y de la organización para la seguridad de la información. Documento final del Proceso de Contratación y Desvinculación de Personal Contratos / Términos y condiciones con colaboradores W-042-2023 CONTRATO INDIVIDUAL DE TRABAJO ENTRE WOLK IT
+
+
+========== A.6.3 Sensibilización, educación y formación en materia de seguridad de la información Cumple 7/7 ==========
+A.6.3 Sensibilización, educación y formación en materia de seguridad de la información Descripción del control Es conveniente que el personal de la organización y las partes interesadas pertinentes reciban información adecuada sobre la seguridad de la información, educación y capacitación y actualizaciones periódicas de la política de seguridad de la información de la organización, políticas y procedimientos específicos del tema, según sea pertinente para su función laboral. Documento final del Programa de Capacitación Certificados de participación al Taller de Concientización de Seguridad Certificados de participación al Taller de Gestión de Riesgos Certificados de participación a la Capacitación de Desarrollo Seguro Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de suscripción a boletines, foros o algún otro grupo de interés relacionado a temas de seguridad de la información PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Sensibilización, educación y formación en materia de seguridad de la información ==========
+A.6.3 Sensibilización, educación y formación en materia de seguridad de la información Descripción del control Es conveniente que el personal de la organización y las partes interesadas pertinentes reciban información adecuada sobre la seguridad de la información, educación y capacitación y actualizaciones periódicas de la política de seguridad de la información de la organización, políticas y procedimientos específicos del tema, según sea pertinente para su función laboral. Documento final del Programa de Capacitación Certificados de participación al Taller de Concientización de Seguridad Certificados de participación al Taller de Gestión de Riesgos Certificados de participación a la Capacitación de Desarrollo Seguro Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de suscripción a boletines, foros o algún otro grupo de interés relacionado a temas de seguridad de la información PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.6.4 Proceso disciplinario Cumple 4/4 ==========
+A.6.4 Proceso disciplinario Descripción del control Se sugiere formalizar y comunicar un proceso disciplinario para tomar medidas contra el personal y otras partes interesadas relevantes que hayan cometido una violación de la política de seguridad de la información. Documento final de la Política de Seguridad de la Información Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de las cláusulas dentro de los contratos con colaboradores que mencionen el proceso o medidas disciplinarias Evidencia de la aplicación del proceso disciplinario
+
+
+========== Proceso disciplinario ==========
+A.6.4 Proceso disciplinario Descripción del control Se sugiere formalizar y comunicar un proceso disciplinario para tomar medidas contra el personal y otras partes interesadas relevantes que hayan cometido una violación de la política de seguridad de la información. Documento final de la Política de Seguridad de la Información Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de las cláusulas dentro de los contratos con colaboradores que mencionen el proceso o medidas disciplinarias Evidencia de la aplicación del proceso disciplinario
+
+
+========== A.6.5 Responsabilidades después de la terminación o cambio de empleo Cumple 3/3 ==========
+A.6.5 Responsabilidades después de la terminación o cambio de empleo Descripción del control Las responsabilidades y deberes de seguridad de la información que siguen siendo válidos después de la terminación o el cambio de empleo se sugiere se definan, hacerse cumplir y comunicarse al personal pertinente y otras partes interesadas. Evidencia de la solicitud de un alta, baja o modificación de accesos Evidencia de bajas completadas dentro del módulo de Personal Contratos / Términos y condiciones con colaboradores
+
+
+========== Responsabilidades después de la terminación o cambio de empleo ==========
+A.6.5 Responsabilidades después de la terminación o cambio de empleo Descripción del control Las responsabilidades y deberes de seguridad de la información que siguen siendo válidos después de la terminación o el cambio de empleo se sugiere se definan, hacerse cumplir y comunicarse al personal pertinente y otras partes interesadas. Evidencia de la solicitud de un alta, baja o modificación de accesos Evidencia de bajas completadas dentro del módulo de Personal Contratos / Términos y condiciones con colaboradores
+
+
+========== A.6.6 Acuerdos de confidencialidad o no divulgación Cumple 1/1 ==========
+A.6.6 Acuerdos de confidencialidad o no divulgación Descripción del control Los acuerdos de confidencialidad o no divulgación que reflejen las necesidades de la organización para la protección de la información se sugiere sean identificados, documentados, revisados y firmados periódicamente por el personal y otras partes interesadas pertinentes. Evidencia de las cláusulas de confidencialidad dentro de los contratos con colaboradores, clientes y/o proveedores
+
+
+========== Acuerdos de confidencialidad o no divulgación ==========
+A.6.6 Acuerdos de confidencialidad o no divulgación Descripción del control Los acuerdos de confidencialidad o no divulgación que reflejen las necesidades de la organización para la protección de la información se sugiere sean identificados, documentados, revisados y firmados periódicamente por el personal y otras partes interesadas pertinentes. Evidencia de las cláusulas de confidencialidad dentro de los contratos con colaboradores, clientes y/o proveedores
+
+
+========== A.6.7 Trabajo remoto Cumple 3/3 ==========
+A.6.7 Trabajo remoto Descripción del control Se recomienda que las medidas de seguridad se implementen cuando el personal trabaja de forma remota para proteger la información a la que se accede, procesa o almacena fuera de las instalaciones de la organización. Documento final de la Política de Seguridad de la Información Documento final de la Política de BYOD Documento final de la Política de Escritorios Limpios
+
+
+========== Trabajo remoto ==========
+A.6.7 Trabajo remoto Descripción del control Se recomienda que las medidas de seguridad se implementen cuando el personal trabaja de forma remota para proteger la información a la que se accede, procesa o almacena fuera de las instalaciones de la organización. Documento final de la Política de Seguridad de la Información Documento final de la Política de BYOD Documento final de la Política de Escritorios Limpios
+
+
+========== A.6.8 Informe de eventos de seguridad de la información Cumple 3/3 ==========
+A.6.8 Informe de eventos de seguridad de la información Descripción del control Se sugiere que la organización proporcione un mecanismo para que el personal informe oportunamente de los acontecimientos de seguridad de la información observados o sospechosos a través de los canales apropiados. Evidencia del medio de comunicación definido para reportar incidentes de seguridad Evidencia de algún reporte de incidente realizado Reporte de Incidente_plantilla
+
+
+========== Informe de eventos de seguridad de la información ==========
+A.6.8 Informe de eventos de seguridad de la información Descripción del control Se sugiere que la organización proporcione un mecanismo para que el personal informe oportunamente de los acontecimientos de seguridad de la información observados o sospechosos a través de los canales apropiados. Evidencia del medio de comunicación definido para reportar incidentes de seguridad Evidencia de algún reporte de incidente realizado Reporte de Incidente_plantilla

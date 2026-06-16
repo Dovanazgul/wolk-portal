@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Directorio | Portal del Empleado WOLK-IT</title>
+
+  <link rel="icon" type="image/jpeg" href="wolk_it_services_logo.jpeg" />
+  <link rel="apple-touch-icon" href="wolk_it_services_logo.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #f4f7fa;
+      --panel: rgba(255, 255, 255, 0.96);
+      --panel-solid: #ffffff;
+      --text: #0f172a;
+      --muted: #607084;
+      --line: #dbe5ec;
+      --accent: #37b24d;
+      --accent-2: #0ea5a8;
+      --accent-3: #1d4ed8;
+      --success: #16a34a;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --shadow: 0 16px 40px rgba(15, 23, 42, 0.10);
+      --shadow-soft: 0 8px 22px rgba(15, 23, 42, 0.07);
+      --shadow-lg: 0 18px 44px rgba(15, 23, 42, 0.14);
+      --radius-xl: 24px;
+      --radius-lg: 20px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --sidebar: 260px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(920px 420px at 85% -90px, rgba(55, 178, 77, 0.10), transparent 68%),
+        radial-gradient(820px 420px at 12% -100px, rgba(14, 165, 168, 0.10), transparent 68%),
+        var(--bg);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    button,
+    input,
+    select { font: inherit; }
+
+    .app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar__inner {
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 250px;
+      flex: 0 0 auto;
+    }
+
+    .brand__img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      border-radius: 14px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      box-shadow: 0 10px 22px rgba(14, 165, 168, 0.12);
+      padding: 4px;
+    }
+
+    .brand__text { line-height: 1.04; }
+
+    .brand__name {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      color: var(--text);
+    }
+
+    .brand__sub {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .brand__tag {
+      display: block;
+      margin-top: 2px;
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .nav-shell {
+      flex: 1 1 420px;
+      min-width: 0;
+      max-width: 560px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .nav-arrow {
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: #ffffff;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 34px;
+      transition: 0.16s ease;
+    }
+
+    .nav-arrow:hover {
+      color: var(--text);
+      border-color: rgba(14, 165, 168, 0.28);
+      background: rgba(14, 165, 168, 0.08);
+    }
+
+    .nav-arrow:disabled {
+      opacity: 0.35;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .nav {
+      flex: 1 1 auto;
+      min-width: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-behavior: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      padding: 4px 2px;
+    }
+
+    .nav::-webkit-scrollbar { display: none; }
+
+    .nav__link {
+      flex: 0 0 auto;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+      padding: 8px 10px;
+      border-radius: 10px;
+      transition: 0.16s ease;
+    }
+
+    .nav__link:hover,
+    .nav__link.is-active {
+      color: var(--text);
+      background: rgba(14, 165, 168, 0.08);
+    }
+
+    .login-link {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      min-height: 38px;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+      color: var(--text);
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .sidebar-backdrop {
+      display: none;
+    }
+
+    body.sidebar-collapsed {
+      --sidebar: 76px;
+    }
+
+    body.sidebar-collapsed .sidebar {
+      padding: 14px 10px;
+    }
+
+    body.sidebar-collapsed .sidebar__head {
+      justify-content: center;
+      margin: 4px 0 10px;
+    }
+
+    body.sidebar-collapsed .sidebar__title,
+    body.sidebar-collapsed .sb-link span:not(.sb-ico),
+    body.sidebar-collapsed .sb-group summary span:not(.sb-ico),
+    body.sidebar-collapsed .sb-sub,
+    body.sidebar-collapsed .sb-group summary::after {
+      display: none;
+    }
+
+    body.sidebar-collapsed .sb-link,
+    body.sidebar-collapsed .sb-group summary {
+      justify-content: center;
+      padding: 10px;
+    }
+
+    body.sidebar-collapsed .sidebar__toggle {
+      transform: rotate(180deg);
+    }
+
+    .shell {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      flex: 1;
+    }
+
+    .sidebar {
+      width: var(--sidebar);
+      flex: 0 0 var(--sidebar);
+      position: sticky;
+      top: 92px;
+      height: calc(100vh - 116px);
+      margin: 18px 0 0 18px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow-soft);
+      padding: 14px;
+      overflow: auto;
+    }
+
+    .sidebar__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 4px 8px 10px;
+    }
+
+    .sidebar__title {
+      font-size: 13px;
+      font-weight: 900;
+      color: var(--muted);
+    }
+
+    .sidebar__toggle {
+      width: 30px;
+      height: 30px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #ffffff;
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: 900;
+    }
+
+    .sb-link,
+    .sb-sub {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      border-radius: 12px;
+    }
+
+    .sb-link {
+      padding: 10px;
+      font-size: 13px;
+      font-weight: 800;
+      border: 1px solid transparent;
+    }
+
+    .sb-link:hover,
+    .sb-link.is-active {
+      background: rgba(14, 165, 168, 0.10);
+      border: 1px solid rgba(14, 165, 168, 0.18);
+    }
+
+    .sb-ico {
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .sb-group {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--line);
+    }
+
+    .sb-group summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 10px;
+      border-radius: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      position: relative;
+    }
+
+    .sb-group summary::-webkit-details-marker { display: none; }
+
+    .sb-group summary::after {
+      content: "⌄";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 900;
+    }
+
+    .sb-group[open] summary::after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+
+    .sb-sub {
+      padding: 9px 10px 9px 36px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .sb-sub:hover,
+    .sb-sub.is-active {
+      background: #f4f8fb;
+    }
+
+    .main {
+      flex: 1;
+      min-width: 0;
+      padding: 18px 0 64px;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-right: 18px;
+    }
+
+    .page-head {
+      margin: 6px 0 18px;
+      padding: 8px 0 4px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-2);
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .h1 {
+      margin: 0 0 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(38px, 5vw, 56px);
+      line-height: 0.98;
+      font-weight: 900;
+      letter-spacing: -1.1px;
+    }
+
+    .h1::after {
+      content: "";
+      display: block;
+      width: 84px;
+      height: 4px;
+      border-radius: 999px;
+      margin-top: 12px;
+      background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    }
+
+    .muted {
+      margin: 0;
+      max-width: 820px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .card {
+      position: relative;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      padding: 18px;
+      margin: 16px 0;
+    }
+
+    .card--soft {
+      box-shadow: var(--shadow-soft);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      line-height: 1.08;
+      font-weight: 900;
+    }
+
+    .section-copy {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 900;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      background: #ffffff;
+      white-space: nowrap;
+    }
+
+    .pill--active {
+      color: #166534;
+      background: rgba(22, 163, 74, 0.10);
+      border-color: rgba(22, 163, 74, 0.20);
+    }
+
+    .pill--vacation {
+      color: #9a6700;
+      background: rgba(245, 158, 11, 0.10);
+      border-color: rgba(245, 158, 11, 0.22);
+    }
+
+    .pill--featured {
+      color: #0f766e;
+      background: rgba(14, 165, 168, 0.10);
+      border-color: rgba(14, 165, 168, 0.22);
+    }
+
+    .pill--area-direccion {
+      color: #1d4ed8;
+      background: rgba(29, 78, 216, 0.10);
+      border-color: rgba(29, 78, 216, 0.24);
+    }
+
+    .pill--area-comercial {
+      color: #0f766e;
+      background: rgba(14, 165, 168, 0.10);
+      border-color: rgba(14, 165, 168, 0.24);
+    }
+
+    .pill--area-operacion {
+      color: #166534;
+      background: rgba(22, 163, 74, 0.10);
+      border-color: rgba(22, 163, 74, 0.24);
+    }
+
+    .pill--area-administracion {
+      color: #92400e;
+      background: rgba(245, 158, 11, 0.12);
+      border-color: rgba(245, 158, 11, 0.28);
+    }
+
+
+    .directory-toolbar {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) 190px 210px 180px auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .input,
+    .select {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 0 12px;
+      background: #ffffff;
+      color: var(--text);
+      outline: none;
+    }
+
+    .input:focus,
+    .select:focus {
+      border-color: rgba(14, 165, 168, 0.42);
+      box-shadow: 0 0 0 4px rgba(14, 165, 168, 0.11);
+    }
+
+    .btn {
+      min-height: 46px;
+      padding: 0 16px;
+      border: 0;
+      border-radius: 14px;
+      cursor: pointer;
+      font-weight: 900;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--accent-2), var(--accent));
+      box-shadow: 0 12px 26px rgba(14, 165, 168, 0.14);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+
+    .btn--ghost {
+      color: var(--text);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 16px 0;
+    }
+
+    .summary-card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .summary-card strong {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .summary-card span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .area-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .area-card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .area-card__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .area-card h3 {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .area-card strong {
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--accent-2);
+    }
+
+    .area-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .contact-card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 15px;
+      box-shadow: var(--shadow-soft);
+      transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-1px);
+      border-color: rgba(14, 165, 168, 0.26);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .contact-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 15px;
+      background: rgba(14, 165, 168, 0.10);
+      color: var(--accent-2);
+      border: 1px solid rgba(14, 165, 168, 0.18);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      flex: 0 0 44px;
+    }
+
+    .contact-name {
+      font-weight: 900;
+      line-height: 1.22;
+      margin-bottom: 5px;
+    }
+
+    .contact-position {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .contact-data {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .contact-data a,
+    .contact-data button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+      color: var(--text);
+      padding: 10px;
+      cursor: pointer;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    .contact-data a:hover,
+    .contact-data button:hover {
+      border-color: rgba(14, 165, 168, 0.28);
+      background: #f8fbfc;
+    }
+
+    .whatsapp-action {
+      color: #128c7e !important;
+      font-weight: 900;
+    }
+
+    .table-wrap {
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      min-width: 1020px;
+    }
+
+    .table th,
+    .table td {
+      padding: 12px 11px;
+      border: 1px solid var(--line);
+      text-align: left;
+      font-size: 13px;
+      vertical-align: top;
+    }
+
+    .table th {
+      color: var(--muted);
+      font-weight: 900;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      background: #fbfdff;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .table a {
+      color: var(--accent-2);
+      font-weight: 800;
+    }
+
+    .table-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .mini-btn {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px 10px;
+      background: #ffffff;
+      color: var(--text);
+      font-weight: 900;
+      cursor: pointer;
+      font-size: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mini-btn:hover {
+      border-color: rgba(14, 165, 168, 0.28);
+      background: #f8fbfc;
+    }
+
+    .mini-btn--wa { color: #128c7e; }
+
+    .empty-state {
+      display: none;
+      padding: 18px;
+      text-align: center;
+      color: var(--muted);
+      border: 1px dashed var(--line);
+      border-radius: var(--radius-md);
+      background: #ffffff;
+    }
+
+    .toast {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 50;
+      max-width: 360px;
+      background: #ffffff;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent-2);
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: 0 18px 44px rgba(15, 23, 42, 0.16);
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: 0.2s ease;
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .toast.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .footer {
+      margin-top: auto;
+      background: #ffffff;
+      border-top: 1px solid var(--line);
+      padding: 34px 0;
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .footer__col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__col--right {
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .footer__link {
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .footer__link:hover { text-decoration: underline; }
+
+    .footer__social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      min-width: 180px;
+    }
+
+    .footer__icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: var(--text);
+      font-weight: 900;
+      transition: 0.16s ease;
+    }
+
+    .footer__icon:hover {
+      border-color: rgba(14, 165, 168, 0.26);
+      background: rgba(14, 165, 168, 0.06);
+    }
+
+    @media (max-width: 1120px) {
+      .directory-toolbar {
+        grid-template-columns: 1fr 190px 210px;
+      }
+
+      .directory-toolbar .btn {
+        grid-column: 1 / -1;
+      }
+
+      .contact-grid,
+      .area-grid,
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 920px) {
+      .topbar__inner {
+        height: auto;
+        min-height: 74px;
+        flex-wrap: wrap;
+        padding: 10px 0 12px;
+      }
+
+      .brand {
+        min-width: 0;
+        flex: 1 1 auto;
+      }
+
+      .mobile-menu-btn {
+        display: inline-flex;
+        order: 2;
+        flex: 0 0 auto;
+      }
+
+      .login-link {
+        order: 3;
+        flex: 0 0 auto;
+      }
+
+      .nav-shell {
+        order: 4;
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: none;
+        justify-content: stretch;
+        overflow: hidden;
+      }
+
+      .nav {
+        width: 100%;
+        min-width: 0;
+        overflow-x: auto;
+      }
+
+      .shell { display: block; }
+
+      .sidebar-backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 80;
+        background: rgba(15, 23, 42, 0.45);
+        backdrop-filter: blur(4px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.18s ease, visibility 0.18s ease;
+      }
+
+      .sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 90;
+        width: min(330px, 88vw);
+        max-width: 88vw;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0 22px 22px 0;
+        transform: translateX(-106%);
+        transition: transform 0.22s ease;
+      }
+
+      body.mobile-menu-open .sidebar {
+        transform: translateX(0);
+      }
+
+      body.mobile-menu-open .sidebar-backdrop {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      body.mobile-menu-open {
+        overflow: hidden;
+      }
+
+      body.sidebar-collapsed {
+        --sidebar: 260px;
+      }
+
+      body.sidebar-collapsed .sidebar__title,
+      body.sidebar-collapsed .sb-link span:not(.sb-ico),
+      body.sidebar-collapsed .sb-group summary span:not(.sb-ico),
+      body.sidebar-collapsed .sb-sub,
+      body.sidebar-collapsed .sb-group summary::after {
+        display: inline-flex;
+      }
+
+      body.sidebar-collapsed .sb-sub {
+        display: flex;
+      }
+
+      body.sidebar-collapsed .sb-link,
+      body.sidebar-collapsed .sb-group summary {
+        justify-content: flex-start;
+      }
+
+      body.sidebar-collapsed .sidebar__toggle {
+        transform: none;
+      }
+
+      .page { padding: 0 18px; }
+      .brand__tag { display: none; }
+    }
+
+    @media (max-width: 760px) {
+      .wrap {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .directory-toolbar,
+      .contact-grid,
+      .area-grid,
+      .summary-grid,
+      .footer__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer__col,
+      .footer__col--right {
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer__social {
+        min-width: auto;
+      }
+
+      .card {
+        padding: 16px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .brand__img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .brand__name {
+        font-size: 14px;
+      }
+
+      .brand__sub {
+        font-size: 11px;
+      }
+
+      .login-link {
+        display: none;
+      }
+
+      .h1 {
+        font-size: 32px;
+      }
+
+      .nav-arrow {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+      }
+
+      .nav__link {
+        font-size: 11px;
+        padding: 8px 9px;
+      }
+
+      .toast {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="wrap topbar__inner">
+        <a class="brand" href="index.html" aria-label="WOLK-IT Portal del Empleado">
+          <img class="brand__img" src="wolk_it_services_logo.jpeg" alt="WOLK-IT" />
+
+          <span class="brand__text">
+            <strong class="brand__name">WOLK-IT</strong>
+            <span class="brand__sub">Portal del Empleado</span>
+            <span class="brand__tag">Sistema interno de acceso</span>
+          </span>
+        </a>
+
+        <button class="mobile-menu-btn" type="button" data-mobile-menu aria-expanded="false" aria-label="Abrir menú lateral">
+          ☰ Menú
+        </button>
+
+        <div class="nav-shell" aria-label="Controles de navegación">
+          <button class="nav-arrow" type="button" data-nav-prev aria-label="Anterior">‹</button>
+
+          <nav class="nav" id="topNav" aria-label="Navegación principal">
+            <a class="nav__link" href="index.html">Centro de mando</a>
+            <a class="nav__link is-active" href="directorio.html">Directorio</a>
+            <a class="nav__link" href="solicitudes.html">Solicitudes</a>
+            <a class="nav__link" href="documentos.html">Documentos</a>
+            <a class="nav__link" href="index.html#newsletter">Newsletter</a>
+            <a class="nav__link" href="soporte.html">WOLK-IT</a>
+          </nav>
+
+          <button class="nav-arrow" type="button" data-nav-next aria-label="Siguiente">›</button>
+        </div>
+
+        <a class="login-link" href="login.html">Login</a>
+      </div>
+    </header>
+
+    <div class="sidebar-backdrop" data-sidebar-close></div>
+
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar__head">
+          <div class="sidebar__title">Menú</div>
+          <button class="sidebar__toggle" type="button" aria-label="Contraer">⟪</button>
+        </div>
+
+        <a class="sb-link" href="index.html">
+          <span class="sb-ico">▦</span>
+          <span>Portal del empleado</span>
+        </a>
+
+        <a class="sb-link is-active" href="directorio.html">
+          <span class="sb-ico">👥</span>
+          <span>Directorio</span>
+        </a>
+
+        <details class="sb-group" open>
+          <summary>
+            <span class="sb-ico">▣</span>
+            <span>Gestión</span>
+          </summary>
+<a class="sb-sub" href="solicitudes.html#vacaciones">Vacaciones y permisos</a>
+<a class="sb-sub" href="solicitudes.html#personal">Solicitud de personal</a>
+<a class="sb-sub" href="solicitudes.html#equipo">Equipo y formación</a>
+<a class="sb-sub" href="solicitudes.html#devolucion">Devolución de equipo</a>
+        </details>
+
+        <details class="sb-group" open>
+          <summary>
+            <span class="sb-ico">✓</span>
+            <span>Cumplimiento</span>
+          </summary>
+          <a class="sb-sub" href="autoevaluacion-preventa.html">Autoevaluación preventa</a>
+          <a class="sb-sub" href="autoevaluacion-operaciones.html">Autoevaluación operaciones</a>
+          <a class="sb-sub" href="capacitacion-iso27001.html">Capacitación ISO 27001</a>
+          <a class="sb-sub" href="uso-equipos-fuera-oficina.html">Uso de equipos fuera de oficina</a>
+        </details>
+
+        <details class="sb-group" open>
+          <summary>
+            <span class="sb-ico">↗</span>
+            <span>Recursos</span>
+          </summary>
+          <a class="sb-sub" href="documentos.html">Documentos internos</a>
+          <a class="sb-sub" href="index.html#acerca-de-wolk">Acerca de Wolk It</a>
+          <a class="sb-sub" href="index.html#newsletter">Newsletter del mes</a>
+          <a class="sb-sub" href="soporte.html">Soporte interno</a>
+        </details>
+      </aside>
+
+      <main class="main">
+        <div class="page">
+      <section class="page-head">
+        <a class="back-link" href="index.html">← Volver al portal</a>
+        <h1 class="h1">Directorio interno</h1>
+        <p class="muted">
+          Consulta rápida de colaboradores, áreas, puestos, correos corporativos, teléfonos y contacto por WhatsApp.
+        </p>
+      </section>
+
+      <section class="card card--soft">
+        <div class="directory-toolbar">
+          <input
+            class="input"
+            type="search"
+            id="searchInput"
+            placeholder="Buscar por nombre, equipo, puesto, correo o teléfono..."
+            autocomplete="off"
+          />
+
+          <select class="select" id="areaFilter">
+            <option value="Todas">Todas las áreas</option>
+            <option value="Dirección">Dirección</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Operación">Operación</option>
+            <option value="Administración">Administración</option>
+          </select>
+
+          <select class="select" id="teamFilter">
+            <option value="Todos">Todos los equipos</option>
+          </select>
+
+          <select class="select" id="statusFilter">
+            <option value="Todos">Todos los estados</option>
+            <option value="Activo">Activos</option>
+            <option value="Vacaciones">Vacaciones</option>
+          </select>
+
+          <button class="btn btn--ghost" type="button" id="clearBtn">
+            Limpiar filtros
+          </button>
+        </div>
+      </section>
+
+      <section class="summary-grid" id="summaryGrid"></section>
+
+      <section class="card">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Áreas del directorio</h2>
+            <p class="section-copy">Se ordenó el directorio en cuatro áreas principales para evitar duplicidad.</p>
+          </div>
+        </div>
+
+        <div class="area-grid" id="areaGrid"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Contactos destacados</h2>
+            <p class="section-copy">Vista rápida para dirección, gerencias y responsables clave.</p>
+          </div>
+        </div>
+
+        <div class="contact-grid" id="featuredGrid"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Listado del directorio</h2>
+            <p class="section-copy">Se dejó una sola vista completa para no repetir el mismo contenido en tarjetas y tabla.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Área</th>
+                <th>Equipo</th>
+                <th>Puesto</th>
+                <th>Estado</th>
+                <th>Correo corporativo</th>
+                <th>Teléfono</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          No se encontraron contactos con los filtros seleccionados.
+        </div>
+      </section>
+    </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__col">
+        <a class="footer__link" href="https://www.wolk-it.com/aviso-privacidad-mexico/" target="_blank" rel="noopener">Aviso de Privacidad México</a>
+        <a class="footer__link" href="https://www.wolk-it.com/iso-27001/" target="_blank" rel="noopener">Avisos de la ISO 27001 versión 2022</a>
+      </div>
+
+      <div class="footer__social">
+        <a class="footer__icon" href="https://x.com/wolkitservices" target="_blank" rel="noopener" aria-label="X">𝕏</a>
+        <a class="footer__icon" href="https://www.facebook.com/wolkitservices" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a class="footer__icon" href="https://mx.linkedin.com/company/wolk-it-services" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a class="footer__icon" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      </div>
+
+      <div class="footer__col footer__col--right">
+        <a class="footer__link" href="https://www.wolk-it.com/" target="_blank" rel="noopener">Privacy Policy US Terms of Use</a>
+        <a class="footer__link" href="https://www.wolk-it.com/aviso-privacidad-colombia/" target="_blank" rel="noopener">Aviso de Privacidad Colombia</a>
+      </div>
+    </div>
+  </footer>
+
+    <div class="toast" id="toast"></div>
+  </div>
+
+  <script>
+    const mobileMenuButton = document.querySelector("[data-mobile-menu]");
+    const sidebarClose = document.querySelector("[data-sidebar-close]");
+    const sidebarToggle = document.querySelector(".sidebar__toggle");
+    const topNav = document.getElementById("topNav");
+    const navPrev = document.querySelector("[data-nav-prev]");
+    const navNext = document.querySelector("[data-nav-next]");
+
+    function closeMobileSidebar() {
+      document.body.classList.remove("mobile-menu-open");
+      if (mobileMenuButton) {
+        mobileMenuButton.setAttribute("aria-expanded", "false");
+      }
+    }
+
+    if (mobileMenuButton) {
+      mobileMenuButton.addEventListener("click", () => {
+        const isOpen = document.body.classList.toggle("mobile-menu-open");
+        mobileMenuButton.setAttribute("aria-expanded", String(isOpen));
+      });
+    }
+
+    if (sidebarClose) {
+      sidebarClose.addEventListener("click", closeMobileSidebar);
+    }
+
+    document.querySelectorAll(".sidebar a").forEach((link) => {
+      link.addEventListener("click", closeMobileSidebar);
+    });
+
+    if (sidebarToggle) {
+      sidebarToggle.addEventListener("click", () => {
+        if (window.matchMedia("(max-width: 920px)").matches) {
+          closeMobileSidebar();
+          return;
+        }
+
+        document.body.classList.toggle("sidebar-collapsed");
+      });
+    }
+
+    if (topNav && navPrev && navNext) {
+      const getMaxScroll = () => Math.max(0, topNav.scrollWidth - topNav.clientWidth);
+
+      const updateNavButtons = () => {
+        const maxScroll = getMaxScroll();
+        const currentLeft = Math.ceil(topNav.scrollLeft);
+
+        navPrev.disabled = currentLeft <= 1;
+        navNext.disabled = currentLeft >= maxScroll - 1;
+
+        if (maxScroll <= 1) {
+          navPrev.disabled = true;
+          navNext.disabled = true;
+        }
+      };
+
+      const moveTopNav = (direction) => {
+        const maxScroll = getMaxScroll();
+
+        if (maxScroll <= 1) {
+          updateNavButtons();
+          return;
+        }
+
+        const amount = Math.max(160, Math.round(topNav.clientWidth * 0.78));
+        const nextPosition = Math.min(
+          maxScroll,
+          Math.max(0, topNav.scrollLeft + direction * amount)
+        );
+
+        topNav.scrollTo({
+          left: nextPosition,
+          behavior: "smooth"
+        });
+
+        requestAnimationFrame(updateNavButtons);
+        setTimeout(updateNavButtons, 180);
+        setTimeout(updateNavButtons, 360);
+      };
+
+      navPrev.addEventListener("click", () => moveTopNav(-1));
+      navNext.addEventListener("click", () => moveTopNav(1));
+      topNav.addEventListener("scroll", updateNavButtons, { passive: true });
+      window.addEventListener("resize", () => setTimeout(updateNavButtons, 80));
+      window.addEventListener("load", updateNavButtons);
+
+      requestAnimationFrame(updateNavButtons);
+      setTimeout(updateNavButtons, 400);
+    }
+
+    const contacts = [
+      {
+            "name": "Hugo Alexander Jimenez Vazquez",
+            "area": "Dirección",
+            "team": "Dirección",
+            "position": "CEO",
+            "email": "hugo.jimenez@wolk-it.com",
+            "phone": "5543424425",
+            "status": "Activo"
+      },
+      {
+            "name": "Erasmo Esquivel Duran",
+            "area": "Dirección",
+            "team": "Dirección",
+            "position": "CTO",
+            "email": "erasmo.esquivel@wolk-it.com",
+            "phone": "5548209780",
+            "status": "Activo"
+      },
+      {
+            "name": "Fernando Carcamo Luna",
+            "area": "Dirección",
+            "team": "Dirección",
+            "position": "CCO",
+            "email": "fernando.carcamo@wolk-it.com",
+            "phone": "5527173664",
+            "status": "Activo"
+      },
+      {
+            "name": "Erick Cristopher Agüeros Rosas",
+            "area": "Dirección",
+            "team": "Dirección",
+            "position": "CFO",
+            "email": "erick.agueros@wolk-it.com",
+            "phone": "5513694380",
+            "status": "Activo"
+      },
+      {
+            "name": "Jose Roberto Benitez Garcia",
+            "area": "Comercial",
+            "team": "Preventa",
+            "position": "Gerente de Preventa",
+            "email": "roberto.benitez@wolk-it.com",
+            "phone": "5510626476",
+            "status": "Activo"
+      },
+      {
+            "name": "Luis Ivan Vazquez Covarrubias",
+            "area": "Operación",
+            "team": "Implementación",
+            "position": "Gerente de implementación",
+            "email": "luis.vazquez@wolk-it.com",
+            "phone": "5527164375",
+            "status": "Activo"
+      },
+      {
+            "name": "Carlos Enrique Cornejo Leon",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Gerente de servicios administrados",
+            "email": "carlos.cornejo@wolk-it.com",
+            "phone": "55 1762 9635",
+            "status": "Activo"
+      },
+      {
+            "name": "Ignacio Mendoza Trejo",
+            "area": "Operación",
+            "team": "Operación",
+            "position": "CISO",
+            "email": "ignacio.mendoza@wolk-it.com",
+            "phone": "5564220002",
+            "status": "Activo"
+      },
+      {
+            "name": "Aldo Eliu Ramírez González",
+            "area": "Operación",
+            "team": "Operación",
+            "position": "PM",
+            "email": "aldo.ramirez@wolk-it.com",
+            "phone": "81 2152 9343",
+            "status": "Activo"
+      },
+      {
+            "name": "Marisol Medina Alarcón",
+            "area": "Operación",
+            "team": "Operación",
+            "position": "PM",
+            "email": "marisol.medina@wolk-it.com",
+            "phone": "56 1472 4876",
+            "status": "Activo"
+      },
+      {
+            "name": "Julia Patricia Guerra Fierro",
+            "area": "Administración",
+            "team": "Administración",
+            "position": "Responsable de Administración",
+            "email": "julia.guerra@wolk-it.com",
+            "phone": "8115180971",
+            "status": "Activo"
+      },
+      {
+            "name": "Maria Isabel Palomino Martinez",
+            "area": "Administración",
+            "team": "Legal",
+            "position": "Responsable de Legal",
+            "email": "maria.palomino@wolk-it.com",
+            "phone": "5535063692",
+            "status": "Activo"
+      },
+      {
+            "name": "Arely Joselinne Morales Rodríguez",
+            "area": "Administración",
+            "team": "Talento Humano",
+            "position": "Coordinadora de Talento Humano",
+            "email": "arely.morales@wolk-it.com",
+            "phone": "5581682270",
+            "status": "Activo"
+      },
+      {
+            "name": "Guillermo Emmanuel Rodríguez Brito",
+            "area": "Administración",
+            "team": "Contabilidad",
+            "position": "Contador",
+            "email": "guillermo.rodriguez@wolk-it.com",
+            "phone": "777 620 0440",
+            "status": "Activo"
+      },
+      {
+            "name": "Romina María Garcia Benítez",
+            "area": "Comercial",
+            "team": "Comercial",
+            "position": "Gerente Comercial",
+            "email": "romina.garcia@wolk-it.com",
+            "phone": "442 582 4097",
+            "status": "Activo"
+      },
+      {
+            "name": "Claudia Alejandra Méndez Mazon",
+            "area": "Comercial",
+            "team": "KAM",
+            "position": "KAM",
+            "email": "claudia.mendez@wolk-it.com",
+            "phone": "8126424547",
+            "status": "Activo"
+      },
+      {
+            "name": "Claudia Puente Rocha",
+            "area": "Comercial",
+            "team": "KAM",
+            "position": "KAM",
+            "email": "claudia.puente@wolk-it.com",
+            "phone": "5541418182",
+            "status": "Activo"
+      },
+      {
+            "name": "Gregorio Tancitaro Lopez Maciel",
+            "area": "Comercial",
+            "team": "KAM",
+            "position": "KAM",
+            "email": "gregorio.lopez@wolk-it.com",
+            "phone": "4777293359",
+            "status": "Activo"
+      },
+      {
+            "name": "Guadalupe Monserrat Zamora Rendon",
+            "area": "Comercial",
+            "team": "KAM",
+            "position": "KAM",
+            "email": "monserrat.zamora@wolk-it.com",
+            "phone": "5580562127",
+            "status": "Activo"
+      },
+      {
+            "name": "Julio Cesar Marquez Mejia",
+            "area": "Comercial",
+            "team": "KAM",
+            "position": "KAM",
+            "email": "julio.marquez@wolk-it.com",
+            "phone": "5521108039",
+            "status": "Activo"
+      },
+      {
+            "name": "Veronica Medina Ponce",
+            "area": "Comercial",
+            "team": "KAM",
+            "position": "KAM",
+            "email": "veronica.medina@wolk-it.com",
+            "phone": "8131188883",
+            "status": "Activo"
+      },
+      {
+            "name": "Bertha Alicia Montiel Gutierrez",
+            "area": "Comercial",
+            "team": "KAM",
+            "position": "KAM",
+            "email": "alicia.montiel@wolk-it.com",
+            "phone": "4424477041",
+            "status": "Activo"
+      },
+      {
+            "name": "Nathalie Guarin",
+            "area": "Comercial",
+            "team": "KAM",
+            "position": "KAM",
+            "email": "nathalie.guarin@wolk-it.com",
+            "phone": "573106770173",
+            "status": "Activo"
+      },
+      {
+            "name": "Dennis Alejandra Canales Jiménez",
+            "area": "Comercial",
+            "team": "Comercial",
+            "position": "Hunter",
+            "email": "dennis.canales@wolk-it.com",
+            "phone": "55 6070 4698",
+            "status": "Activo"
+      },
+      {
+            "name": "Miriam Stephania Chaine Ibanez",
+            "area": "Comercial",
+            "team": "Preventa",
+            "position": "Ingeniero de Preventa",
+            "email": "stephania.chaine@wolk-it.com",
+            "phone": "5512564776",
+            "status": "Activo"
+      },
+      {
+            "name": "Erick Nolasco Vasquez",
+            "area": "Comercial",
+            "team": "Preventa",
+            "position": "Ingeniero de Preventa",
+            "email": "erick.nolasco@wolk-it.com",
+            "phone": "2222033986",
+            "status": "Activo"
+      },
+      {
+            "name": "Luis Angel Ortega Huesca",
+            "area": "Operación",
+            "team": "Implementación",
+            "position": "Ingeniero de Implementación",
+            "email": "luis.ortega@wolk-it.com",
+            "phone": "2351110088",
+            "status": "Activo"
+      },
+      {
+            "name": "Daniel Urrutia Salazar",
+            "area": "Operación",
+            "team": "Implementación",
+            "position": "Ingeniero de Implementación",
+            "email": "daniel.urrutia@wolk-it.com",
+            "phone": "55 7554 2440",
+            "status": "Activo"
+      },
+      {
+            "name": "Kyo Emanuel Dominguez Romero",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Ingeniero de Servicios Administrados",
+            "email": "emanuel.dominguez@wolk-it.com",
+            "phone": "5510230723",
+            "status": "Activo"
+      },
+      {
+            "name": "Alejandro Ruiz Jimenez",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Ingeniero de Servicios Administrados",
+            "email": "alejandro.ruiz@wolk-it.com",
+            "phone": "8141209123",
+            "status": "Activo"
+      },
+      {
+            "name": "Alfredo Mota Meneses",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Ingeniero de Servicios Administrados",
+            "email": "alfredo.mota@wolk-it.com",
+            "phone": "5524164853",
+            "status": "Activo"
+      },
+      {
+            "name": "Eraclio Israel Beltrán Galarza",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Ingeniero de Servicios Administrados",
+            "email": "eraclio.beltran@wolk-it.com",
+            "phone": "55 29681165",
+            "status": "Activo"
+      },
+      {
+            "name": "Alfredo Isaac Rosas Reyes",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Ingeniero de Servicios Administrados",
+            "email": "isaac.rosas@wolk-it.com",
+            "phone": "56 5507 3062",
+            "status": "Activo"
+      },
+      {
+            "name": "Salvador García Cabrera",
+            "area": "Operación",
+            "team": "Implementación",
+            "position": "Ingeniero de Implementación",
+            "email": "salvador.garcia@wolk-it.com",
+            "phone": "56 2464 8483",
+            "status": "Activo"
+      },
+      {
+            "name": "Valeria Michelle Mendoza Moreno",
+            "area": "Operación",
+            "team": "Implementación",
+            "position": "Ingeniero de Implementación",
+            "email": "valeria.mendoza@wolk-it.com",
+            "phone": "55 6112 7522",
+            "status": "Activo"
+      },
+      {
+            "name": "Oyuki Yamanic Polanco Sosa",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Ingeniero de Servicios Administrados",
+            "email": "oyuki.polanco@wolk-it.com",
+            "phone": "55 4463 1477",
+            "status": "Activo"
+      },
+      {
+            "name": "Eber Manuel Velazco Maldonado",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Ingeniero de Servicios Administrados",
+            "email": "eber.velazco@wolk-it.com",
+            "phone": "729 687 1685",
+            "status": "Activo"
+      },
+      {
+            "name": "Miguel Nazario Priego Vera",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Ingeniero de Servicios Administrados",
+            "email": "nazario.priego@wolk-it.com",
+            "phone": "998 394 5802",
+            "status": "Activo"
+      },
+      {
+            "name": "Diego Alonso Garcia Valdes",
+            "area": "Operación",
+            "team": "Servicios Administrados",
+            "position": "Ingeniero de Servicios Administrados",
+            "email": "diego.garcia@wolk-it.com",
+            "phone": "5510145991",
+            "status": "Activo"
+      },
+      {
+            "name": "Oscar Eduardo Solis García",
+            "area": "Operación",
+            "team": "Implementación",
+            "position": "Ingeniero de Implementación",
+            "email": "oscar.solis@wolk-it.com",
+            "phone": "33 2113 9179",
+            "status": "Activo"
+      }
+];
+
+    const areaOrder = ["Dirección", "Comercial", "Operación", "Administración"];
+    const teamOrder = [
+      "Dirección",
+      "Comercial",
+      "KAM",
+      "Preventa",
+      "Operación",
+      "Implementación",
+      "Servicios Administrados",
+      "Administración",
+      "Legal",
+      "Talento Humano",
+      "Contabilidad"
+    ];
+
+    const areaNotes = {
+      "Dirección": "CEO, CTO, CCO y CFO.",
+      "Comercial": "Comercial, KAM y Preventa.",
+      "Operación": "Operación, Implementación y Servicios Administrados.",
+      "Administración": "Administración, Legal, Talento Humano y Contabilidad."
+    };
+
+    const searchInput = document.getElementById("searchInput");
+    const areaFilter = document.getElementById("areaFilter");
+    const teamFilter = document.getElementById("teamFilter");
+    const statusFilter = document.getElementById("statusFilter");
+    const clearBtn = document.getElementById("clearBtn");
+    const summaryGrid = document.getElementById("summaryGrid");
+    const areaGrid = document.getElementById("areaGrid");
+    const featuredGrid = document.getElementById("featuredGrid");
+    const tableBody = document.getElementById("tableBody");
+    const emptyState = document.getElementById("emptyState");
+    const toast = document.getElementById("toast");
+
+    function getInitials(name) {
+      return name
+        .split(" ")
+        .filter(Boolean)
+        .slice(0, 2)
+        .map((word) => word[0])
+        .join("")
+        .toUpperCase();
+    }
+
+    function normalize(value) {
+      return value
+        .toString()
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[̀-ͯ]/g, "");
+    }
+
+    function cleanPhone(phone) {
+      return phone.replace(/\D/g, "");
+    }
+
+    function getAreaClass(area) {
+      const key = normalize(area).replace(/\s+/g, "-");
+      return `pill--area-${key}`;
+    }
+
+
+    function getWhatsAppUrl(phone, name) {
+      const digits = cleanPhone(phone);
+      const phoneWithCountry = digits.length === 10 ? `52${digits}` : digits;
+      const text = encodeURIComponent(`Hola ${name}, te contacto desde el Portal del Empleado Wolk-IT.`);
+      return `https://wa.me/${phoneWithCountry}?text=${text}`;
+    }
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("is-visible");
+
+      setTimeout(() => {
+        toast.classList.remove("is-visible");
+      }, 2400);
+    }
+
+    async function copyText(text, label) {
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast(`${label} copiado correctamente`);
+      } catch {
+        showToast(`No se pudo copiar ${label.toLowerCase()}`);
+      }
+    }
+
+    function isFeatured(contact) {
+      const position = normalize(contact.position);
+      const area = normalize(contact.area);
+
+      return (
+        area === "direccion" ||
+        position.includes("gerente") ||
+        position.includes("ciso") ||
+        position.includes("coordinadora de talento humano")
+      );
+    }
+
+    function populateTeams() {
+      const currentValue = teamFilter.value;
+      const selectedArea = areaFilter.value;
+      const teams = [...new Set(
+        contacts
+          .filter((contact) => selectedArea === "Todas" || contact.area === selectedArea)
+          .map((contact) => contact.team)
+      )].sort((a, b) => teamOrder.indexOf(a) - teamOrder.indexOf(b));
+
+      teamFilter.innerHTML = '<option value="Todos">Todos los equipos</option>';
+
+      teams.forEach((team) => {
+        const option = document.createElement("option");
+        option.value = team;
+        option.textContent = team;
+        teamFilter.appendChild(option);
+      });
+
+      if (teams.includes(currentValue)) {
+        teamFilter.value = currentValue;
+      } else {
+        teamFilter.value = "Todos";
+      }
+    }
+
+    function getFilteredContacts() {
+      const query = normalize(searchInput.value.trim());
+      const selectedArea = areaFilter.value;
+      const selectedTeam = teamFilter.value;
+      const selectedStatus = statusFilter.value;
+
+      return contacts.filter((contact) => {
+        const matchesArea = selectedArea === "Todas" || contact.area === selectedArea;
+        const matchesTeam = selectedTeam === "Todos" || contact.team === selectedTeam;
+        const matchesStatus = selectedStatus === "Todos" || contact.status === selectedStatus;
+        const searchable = normalize(`${contact.name} ${contact.area} ${contact.team} ${contact.position} ${contact.email} ${contact.phone} ${contact.status}`);
+        const matchesQuery = !query || searchable.includes(query);
+
+        return matchesArea && matchesTeam && matchesStatus && matchesQuery;
+      });
+    }
+
+    function renderSummary(filteredContacts) {
+      const activeCount = filteredContacts.filter((contact) => contact.status === "Activo").length;
+      const areaCount = new Set(filteredContacts.map((contact) => contact.area)).size;
+      const teamCount = new Set(filteredContacts.map((contact) => contact.team)).size;
+
+      summaryGrid.innerHTML = `
+        <div class="summary-card">
+          <strong>${filteredContacts.length}</strong>
+          <span>Contactos visibles</span>
+        </div>
+
+        <div class="summary-card">
+          <strong>${areaCount}</strong>
+          <span>Áreas visibles</span>
+        </div>
+
+        <div class="summary-card">
+          <strong>${teamCount}</strong>
+          <span>Equipos visibles</span>
+        </div>
+
+        <div class="summary-card">
+          <strong>${activeCount}</strong>
+          <span>Colaboradores activos</span>
+        </div>
+      `;
+    }
+
+    function renderAreas(filteredContacts) {
+      areaGrid.innerHTML = areaOrder.map((area) => {
+        const total = filteredContacts.filter((contact) => contact.area === area).length;
+        return `
+          <article class="area-card">
+            <div class="area-card__top">
+              <h3>${area}</h3>
+              <strong>${total}</strong>
+            </div>
+            <p>${areaNotes[area]}</p>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderContactCard(contact) {
+      const statusClass = contact.status === "Vacaciones" ? "pill--vacation" : "pill--active";
+
+      return `
+        <article class="contact-card">
+          <div class="contact-head">
+            <div class="avatar">${getInitials(contact.name)}</div>
+
+            <div>
+              <div class="contact-name">${contact.name}</div>
+              <span class="contact-position">${contact.position}</span>
+
+              <div class="pills">
+                <span class="pill ${getAreaClass(contact.area)}">${contact.area}</span>
+                <span class="pill">${contact.team}</span>
+                <span class="pill ${statusClass}">${contact.status}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-data">
+            <a href="mailto:${contact.email}">
+              <span>${contact.email}</span>
+              <strong>Enviar</strong>
+            </a>
+
+            <a class="whatsapp-action" href="${getWhatsAppUrl(contact.phone, contact.name)}" target="_blank" rel="noopener">
+              <span>WhatsApp</span>
+              <strong>Abrir</strong>
+            </a>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderFeatured(filteredContacts) {
+      const featuredContacts = filteredContacts.filter(isFeatured);
+      featuredGrid.innerHTML = featuredContacts.map(renderContactCard).join("");
+    }
+
+    function renderTable(filteredContacts) {
+      tableBody.innerHTML = filteredContacts.map((contact) => {
+        const statusClass = contact.status === "Vacaciones" ? "pill--vacation" : "pill--active";
+
+        return `
+          <tr>
+            <td><strong>${contact.name}</strong></td>
+            <td><span class="pill ${getAreaClass(contact.area)}">${contact.area}</span></td>
+            <td>${contact.team}</td>
+            <td>${contact.position}</td>
+            <td><span class="pill ${statusClass}">${contact.status}</span></td>
+            <td><a href="mailto:${contact.email}">${contact.email}</a></td>
+            <td><a href="tel:${cleanPhone(contact.phone)}">${contact.phone}</a></td>
+            <td>
+              <div class="table-actions">
+                <button class="mini-btn" type="button" onclick="copyText('${contact.email}', 'Correo')">Copiar</button>
+                <a class="mini-btn mini-btn--wa" href="${getWhatsAppUrl(contact.phone, contact.name)}" target="_blank" rel="noopener">WhatsApp</a>
+              </div>
+            </td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function renderDirectory() {
+      const filteredContacts = getFilteredContacts();
+
+      renderSummary(filteredContacts);
+      renderAreas(filteredContacts);
+      renderFeatured(filteredContacts);
+      renderTable(filteredContacts);
+
+      emptyState.style.display = filteredContacts.length ? "none" : "block";
+    }
+
+    searchInput.addEventListener("input", renderDirectory);
+    teamFilter.addEventListener("change", renderDirectory);
+    statusFilter.addEventListener("change", renderDirectory);
+
+    areaFilter.addEventListener("change", () => {
+      populateTeams();
+      renderDirectory();
+    });
+
+    clearBtn.addEventListener("click", () => {
+      searchInput.value = "";
+      areaFilter.value = "Todas";
+      statusFilter.value = "Todos";
+      populateTeams();
+      renderDirectory();
+      showToast("Filtros limpiados");
+    });
+
+    populateTeams();
+    renderDirectory();
+  </script>
+</body>
+</html>

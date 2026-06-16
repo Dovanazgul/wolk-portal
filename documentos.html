@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Documentos | Portal del Empleado WOLK-IT</title>
+
+  <link rel="icon" type="image/jpeg" href="wolk_it_services_logo.jpeg" />
+  <link rel="apple-touch-icon" href="wolk_it_services_logo.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #f4f7fa;
+      --panel: rgba(255, 255, 255, 0.96);
+      --text: #0f172a;
+      --muted: #607084;
+      --line: #dbe5ec;
+      --accent: #37b24d;
+      --accent-2: #0ea5a8;
+      --accent-3: #1d4ed8;
+      --success: #16a34a;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --shadow: 0 16px 40px rgba(15, 23, 42, 0.10);
+      --shadow-soft: 0 8px 22px rgba(15, 23, 42, 0.07);
+      --radius-xl: 24px;
+      --radius-lg: 20px;
+      --radius-md: 16px;
+      --sidebar: 260px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(920px 420px at 85% -90px, rgba(55, 178, 77, 0.10), transparent 68%),
+        radial-gradient(820px 420px at 12% -100px, rgba(14, 165, 168, 0.10), transparent 68%),
+        var(--bg);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar__inner {
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 250px;
+      flex: 0 0 auto;
+    }
+
+    .brand__img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      border-radius: 14px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      box-shadow: 0 10px 22px rgba(14, 165, 168, 0.12);
+      padding: 4px;
+    }
+
+    .brand__text { line-height: 1.04; }
+
+    .brand__name {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      color: var(--text);
+    }
+
+    .brand__sub {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .brand__tag {
+      display: block;
+      margin-top: 2px;
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .nav-shell {
+      flex: 1 1 420px;
+      min-width: 0;
+      max-width: 560px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .nav-arrow {
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: #ffffff;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 34px;
+      transition: 0.16s ease;
+    }
+
+    .nav-arrow:hover {
+      color: var(--text);
+      border-color: rgba(14, 165, 168, 0.28);
+      background: rgba(14, 165, 168, 0.08);
+    }
+
+    .nav-arrow:disabled {
+      opacity: 0.35;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .nav {
+      flex: 1 1 auto;
+      min-width: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-behavior: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      padding: 4px 2px;
+    }
+
+    .nav::-webkit-scrollbar { display: none; }
+
+    .nav__link {
+      flex: 0 0 auto;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+      padding: 8px 10px;
+      border-radius: 10px;
+      transition: 0.16s ease;
+    }
+
+    .nav__link:hover,
+    .nav__link.is-active {
+      color: var(--text);
+      background: rgba(14, 165, 168, 0.08);
+    }
+
+    .login-link {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      min-height: 38px;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+      color: var(--text);
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .sidebar-backdrop { display: none; }
+
+    body.sidebar-collapsed { --sidebar: 76px; }
+
+    body.sidebar-collapsed .sidebar { padding: 14px 10px; }
+
+    body.sidebar-collapsed .sidebar__head {
+      justify-content: center;
+      margin: 4px 0 10px;
+    }
+
+    body.sidebar-collapsed .sidebar__title,
+    body.sidebar-collapsed .sb-link span:not(.sb-ico),
+    body.sidebar-collapsed .sb-group summary span:not(.sb-ico),
+    body.sidebar-collapsed .sb-sub,
+    body.sidebar-collapsed .sb-group summary::after {
+      display: none;
+    }
+
+    body.sidebar-collapsed .sb-link,
+    body.sidebar-collapsed .sb-group summary {
+      justify-content: center;
+      padding: 10px;
+    }
+
+    body.sidebar-collapsed .sidebar__toggle { transform: rotate(180deg); }
+
+    .shell {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      flex: 1;
+    }
+
+    .sidebar {
+      width: var(--sidebar);
+      flex: 0 0 var(--sidebar);
+      position: sticky;
+      top: 92px;
+      height: calc(100vh - 116px);
+      margin: 18px 0 0 18px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow-soft);
+      padding: 14px;
+      overflow: auto;
+    }
+
+    .sidebar__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 4px 8px 10px;
+    }
+
+    .sidebar__title {
+      font-size: 13px;
+      font-weight: 900;
+      color: var(--muted);
+    }
+
+    .sidebar__toggle {
+      width: 30px;
+      height: 30px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #ffffff;
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: 900;
+    }
+
+    .sb-link,
+    .sb-sub {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      border-radius: 12px;
+    }
+
+    .sb-link {
+      padding: 10px;
+      font-size: 13px;
+      font-weight: 800;
+      border: 1px solid transparent;
+    }
+
+    .sb-link:hover,
+    .sb-link.is-active {
+      background: rgba(14, 165, 168, 0.10);
+      border: 1px solid rgba(14, 165, 168, 0.18);
+    }
+
+    .sb-ico {
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .sb-group {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--line);
+    }
+
+    .sb-group summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 10px;
+      border-radius: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      position: relative;
+    }
+
+    .sb-group summary::-webkit-details-marker { display: none; }
+
+    .sb-group summary::after {
+      content: "⌄";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 900;
+    }
+
+    .sb-group[open] summary::after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+
+    .sb-sub {
+      padding: 9px 10px 9px 36px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .sb-sub:hover,
+    .sb-sub.is-active {
+      background: #f4f8fb;
+    }
+
+    .main {
+      flex: 1;
+      min-width: 0;
+      padding: 18px 0 64px;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-right: 18px;
+    }
+
+    .page-head {
+      margin: 6px 0 18px;
+      padding: 8px 0 4px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-2);
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .h1 {
+      margin: 0 0 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(38px, 5vw, 56px);
+      line-height: 0.98;
+      font-weight: 900;
+      letter-spacing: -1.1px;
+    }
+
+    .h1::after {
+      content: "";
+      display: block;
+      width: 84px;
+      height: 4px;
+      border-radius: 999px;
+      margin-top: 12px;
+      background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    }
+
+    .muted {
+      margin: 0;
+      max-width: 820px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .card {
+      position: relative;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      padding: 18px;
+      margin: 16px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      line-height: 1.08;
+      font-weight: 900;
+    }
+
+    .section-copy {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) 190px 190px auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .input,
+    .select {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 0 12px;
+      background: #ffffff;
+      color: var(--text);
+      outline: none;
+    }
+
+    .input:focus,
+    .select:focus {
+      border-color: rgba(14, 165, 168, 0.42);
+      box-shadow: 0 0 0 4px rgba(14, 165, 168, 0.11);
+    }
+
+    .btn {
+      min-height: 46px;
+      padding: 0 16px;
+      border: 0;
+      border-radius: 14px;
+      cursor: pointer;
+      font-weight: 900;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--accent-2), var(--accent));
+      box-shadow: 0 12px 26px rgba(14, 165, 168, 0.14);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+
+    .btn--ghost {
+      color: var(--text);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 16px 0;
+    }
+
+    .summary-card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .summary-card strong {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .summary-card span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 900;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      background: #ffffff;
+      white-space: nowrap;
+    }
+
+    .pill--active {
+      color: #166534;
+      background: rgba(22, 163, 74, 0.10);
+      border-color: rgba(22, 163, 74, 0.20);
+    }
+
+    .pill--warning {
+      color: #9a6700;
+      background: rgba(245, 158, 11, 0.10);
+      border-color: rgba(245, 158, 11, 0.22);
+    }
+
+    .pill--danger {
+      color: #991b1b;
+      background: rgba(239, 68, 68, 0.10);
+      border-color: rgba(239, 68, 68, 0.20);
+    }
+
+    .pill--info {
+      color: #0f766e;
+      background: rgba(14, 165, 168, 0.10);
+      border-color: rgba(14, 165, 168, 0.22);
+    }
+
+    .pill--blue {
+      color: #1d4ed8;
+      background: rgba(29, 78, 216, 0.10);
+      border-color: rgba(29, 78, 216, 0.22);
+    }
+
+    .doc-section {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      padding: 16px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .doc-section__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .doc-section__head h3 {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .doc-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: #fbfdff;
+      padding: 15px;
+      transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-1px);
+      border-color: rgba(14, 165, 168, 0.26);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .doc-card__top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .doc-title {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 17px;
+      line-height: 1.15;
+      font-weight: 900;
+    }
+
+    .doc-code {
+      color: var(--accent-2);
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .doc-desc {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .doc-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .meta-box {
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #ffffff;
+      padding: 9px 10px;
+    }
+
+    .meta-box span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.35px;
+      margin-bottom: 4px;
+    }
+
+    .meta-box strong {
+      display: block;
+      font-size: 13px;
+      line-height: 1.25;
+    }
+
+    .pills,
+    .doc-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .table-wrap {
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      min-width: 980px;
+    }
+
+    .table th,
+    .table td {
+      padding: 12px 11px;
+      border: 1px solid var(--line);
+      text-align: left;
+      font-size: 13px;
+      vertical-align: top;
+    }
+
+    .table th {
+      color: var(--muted);
+      font-weight: 900;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      background: #fbfdff;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .table a,
+    .table button {
+      color: var(--accent-2);
+      font-weight: 900;
+    }
+
+    .table button {
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .empty-state {
+      display: none;
+      padding: 18px;
+      text-align: center;
+      color: var(--muted);
+      border: 1px dashed var(--line);
+      border-radius: var(--radius-md);
+      background: #ffffff;
+    }
+
+    .document-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 120;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .document-modal.is-open {
+      display: flex;
+    }
+
+    .document-modal__backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.56);
+      backdrop-filter: blur(6px);
+    }
+
+    .document-modal__panel {
+      position: relative;
+      width: min(1180px, 100%);
+      height: min(88vh, 820px);
+      display: flex;
+      flex-direction: column;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      box-shadow: 0 30px 80px rgba(15, 23, 42, 0.28);
+      overflow: hidden;
+    }
+
+    .document-modal__head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(760px 240px at 90% -120px, rgba(55, 178, 77, 0.14), transparent 70%),
+        radial-gradient(760px 240px at 10% -120px, rgba(14, 165, 168, 0.14), transparent 70%),
+        #ffffff;
+    }
+
+    .document-modal__title {
+      margin: 0 0 6px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1.15;
+    }
+
+    .document-modal__meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .document-modal__close {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+      color: var(--text);
+      flex: 0 0 40px;
+    }
+
+    .document-modal__body {
+      flex: 1;
+      background: var(--bg);
+      padding: 12px;
+      min-height: 0;
+    }
+
+    .document-frame {
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #ffffff;
+      display: block;
+    }
+
+    .document-modal__actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      padding: 12px 18px 16px;
+      border-top: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .toast {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 140;
+      max-width: 360px;
+      background: #ffffff;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent-2);
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: 0 18px 44px rgba(15, 23, 42, 0.16);
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: 0.2s ease;
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .toast.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .footer {
+      margin-top: auto;
+      background: #ffffff;
+      border-top: 1px solid var(--line);
+      padding: 34px 0;
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .footer__col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__col--right {
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .footer__link {
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .footer__link:hover { text-decoration: underline; }
+
+    .footer__social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      min-width: 180px;
+    }
+
+    .footer__icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: var(--text);
+      font-weight: 900;
+      transition: 0.16s ease;
+    }
+
+    .footer__icon:hover {
+      border-color: rgba(14, 165, 168, 0.26);
+      background: rgba(14, 165, 168, 0.06);
+    }
+
+    @media (max-width: 1180px) {
+      .brand { min-width: 210px; }
+
+      .nav { gap: 4px; }
+
+      .nav__link,
+      .login-link {
+        font-size: 11px;
+        padding: 7px 7px;
+        letter-spacing: 0.25px;
+      }
+
+      .toolbar {
+        grid-template-columns: 1fr 180px 180px;
+      }
+
+      .toolbar .btn {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .shell { display: block; }
+
+      .sidebar {
+        position: fixed;
+        top: 74px;
+        left: 0;
+        z-index: 70;
+        width: min(300px, calc(100% - 42px));
+        height: calc(100vh - 74px);
+        margin: 0;
+        border-radius: 0 20px 20px 0;
+        transform: translateX(-105%);
+        transition: transform 0.22s ease;
+      }
+
+      body.sidebar-open .sidebar {
+        transform: translateX(0);
+      }
+
+      .sidebar-backdrop {
+        position: fixed;
+        inset: 74px 0 0 0;
+        z-index: 65;
+        background: rgba(15, 23, 42, 0.42);
+        backdrop-filter: blur(4px);
+      }
+
+      body.sidebar-open .sidebar-backdrop {
+        display: block;
+      }
+
+      .mobile-menu-btn {
+        display: inline-flex;
+      }
+
+      .page {
+        max-width: 100%;
+        padding: 0 18px;
+      }
+
+      body.sidebar-collapsed { --sidebar: 260px; }
+
+      body.sidebar-collapsed .sidebar__title,
+      body.sidebar-collapsed .sb-link span:not(.sb-ico),
+      body.sidebar-collapsed .sb-group summary span:not(.sb-ico),
+      body.sidebar-collapsed .sb-sub,
+      body.sidebar-collapsed .sb-group summary::after {
+        display: inline-flex;
+      }
+
+      body.sidebar-collapsed .sb-sub {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .wrap {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .topbar__inner {
+        height: 64px;
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .brand__img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .brand__name {
+        font-size: 14px;
+      }
+
+      .brand__sub {
+        font-size: 11px;
+      }
+
+      .brand__tag,
+      .nav-shell,
+      .login-link {
+        display: none;
+      }
+
+      .sidebar {
+        top: 64px;
+        height: calc(100vh - 64px);
+      }
+
+      .sidebar-backdrop {
+        inset: 64px 0 0 0;
+      }
+
+      .h1 {
+        font-size: 34px;
+      }
+
+      .toolbar,
+      .summary-grid,
+      .doc-grid,
+      .footer__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer__col,
+      .footer__col--right {
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer__social {
+        min-width: auto;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      .document-modal {
+        padding: 10px;
+      }
+
+      .document-modal__panel {
+        height: 92vh;
+        border-radius: 18px;
+      }
+
+      .document-modal__actions {
+        flex-direction: column;
+      }
+
+      .document-modal__actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="wrap topbar__inner">
+        <a class="brand" href="index.html" aria-label="WOLK-IT Portal del Empleado">
+          <img class="brand__img" src="wolk_it_services_logo.jpeg" alt="WOLK-IT" />
+
+          <span class="brand__text">
+            <strong class="brand__name">WOLK-IT</strong>
+            <span class="brand__sub">Portal del Empleado</span>
+            <span class="brand__tag">Sistema interno de acceso</span>
+          </span>
+        </a>
+
+        <button class="mobile-menu-btn" type="button" data-mobile-menu aria-expanded="false" aria-label="Abrir menú">
+          ☰ Menú
+        </button>
+
+        <div class="nav-shell">
+          <button class="nav-arrow" type="button" data-nav-prev aria-label="Anterior">‹</button>
+
+          <nav class="nav" id="topNav" aria-label="Navegación principal">
+            <a class="nav__link" href="index.html">Centro de mando</a>
+            <a class="nav__link" href="directorio.html">Directorio</a>
+            <a class="nav__link" href="solicitudes.html">Solicitudes</a>
+            <a class="nav__link is-active" href="documentos.html">Documentos</a>
+            <a class="nav__link" href="index.html#newsletter">Newsletter</a>
+            <a class="nav__link" href="soporte.html">WOLK-IT</a>
+          </nav>
+
+          <button class="nav-arrow" type="button" data-nav-next aria-label="Siguiente">›</button>
+        </div>
+
+        <a class="login-link" href="login.html">Login</a>
+      </div>
+    </header>
+
+    <div class="sidebar-backdrop" data-sidebar-backdrop></div>
+
+    <div class="shell">
+      <aside class="sidebar" aria-label="Menú lateral">
+        <div class="sidebar__head">
+          <span class="sidebar__title">Menú</span>
+          <button class="sidebar__toggle" type="button" data-sidebar-toggle aria-label="Contraer menú">‹</button>
+        </div>
+
+        <a class="sb-link" href="index.html">
+          <span class="sb-ico">▦</span>
+          <span>Portal del empleado</span>
+        </a>
+
+        <a class="sb-link" href="directorio.html">
+          <span class="sb-ico">♟</span>
+          <span>Directorio</span>
+        </a>
+
+        <details class="sb-group" open>
+          <summary>
+            <span class="sb-ico">▣</span>
+            <span>Gestión</span>
+          </summary>
+          <a class="sb-sub" href="solicitudes.html">Solicitudes generales</a>
+          <a class="sb-sub" href="solicitudes.html#vacaciones">Vacaciones y permisos</a>
+          <a class="sb-sub" href="solicitudes.html#personal">Solicitud de personal</a>
+          <a class="sb-sub" href="solicitudes.html#equipo">Equipo y formación</a>
+          <a class="sb-sub" href="solicitudes.html#devolucion">Devolución de equipo</a>
+        </details>
+
+        <details class="sb-group" open>
+          <summary>
+            <span class="sb-ico">✓</span>
+            <span>Cumplimiento</span>
+          </summary>
+          <a class="sb-sub" href="index.html#autoevaluacion-preventa">Autoevaluación preventa</a>
+          <a class="sb-sub" href="index.html#autoevaluacion-operaciones">Autoevaluación operaciones</a>
+          <a class="sb-sub" href="index.html#capacitacion-iso">Capacitación ISO 27001</a>
+          <a class="sb-sub" href="index.html#uso-equipos">Uso de equipos fuera de oficina</a>
+        </details>
+
+        <details class="sb-group" open>
+          <summary>
+            <span class="sb-ico">↗</span>
+            <span>Recursos</span>
+          </summary>
+          <a class="sb-sub is-active" href="documentos.html">Documentos internos</a>
+          <a class="sb-sub" href="index.html#acerca">Acerca de Wolk It</a>
+          <a class="sb-sub" href="index.html#newsletter">Newsletter del mes</a>
+          <a class="sb-sub" href="soporte.html">Soporte interno</a>
+        </details>
+      </aside>
+
+      <main class="main">
+        <div class="page">
+          <section class="page-head">
+            <a class="back-link" href="index.html">← Volver al portal</a>
+            <h1 class="h1">Documentos internos</h1>
+            <p class="muted">
+              Consulta documentos por categoría, vigencia, fecha de aprobación y visualización directa desde Drive.
+            </p>
+          </section>
+
+          <section class="card">
+            <div class="toolbar">
+              <input
+                class="input"
+                type="search"
+                id="searchInput"
+                placeholder="Buscar por título, código, responsable, tipo o descripción..."
+                autocomplete="off"
+              />
+
+              <select class="select" id="typeFilter">
+                <option value="Todos">Todos los tipos</option>
+                <option value="Manuales">Manuales</option>
+                <option value="Políticas">Políticas</option>
+                <option value="Procedimientos">Procedimientos</option>
+                <option value="Formatos">Formatos</option>
+                <option value="Registros">Registros</option>
+                <option value="Otros">Otros</option>
+              </select>
+
+              <select class="select" id="statusFilter">
+                <option value="Todos">Todos los estados</option>
+                <option value="Vigente">Vigente</option>
+                <option value="Por vencer">Por vencer</option>
+                <option value="Vencido">Vencido</option>
+                <option value="Pendiente">Pendiente</option>
+              </select>
+
+              <button class="btn btn--ghost" type="button" id="clearBtn">Limpiar filtros</button>
+            </div>
+          </section>
+
+          <section class="summary-grid" id="summaryGrid"></section>
+
+          <section class="card">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Biblioteca documental</h2>
+                <p class="section-copy">
+                  Selecciona “Ver documento” para abrir la vista previa sin salir del portal.
+                </p>
+              </div>
+            </div>
+
+            <div id="documentSections"></div>
+
+            <div class="empty-state" id="emptyState">
+              No se encontraron documentos con los filtros seleccionados.
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Listado general</h2>
+                <p class="section-copy">
+                  Vista de control con título, código, aprobación, vigencia, responsable y enlace.
+                </p>
+              </div>
+            </div>
+
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Código</th>
+                    <th>Aprobación</th>
+                    <th>Vigencia</th>
+                    <th>Responsable</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="wrap footer__grid">
+        <div class="footer__col">
+          <a class="footer__link" href="https://www.wolk-it.com/aviso-privacidad-mexico/" target="_blank" rel="noopener">Aviso de Privacidad México</a>
+          <a class="footer__link" href="https://www.wolk-it.com/iso-27001/" target="_blank" rel="noopener">Avisos de la ISO 27001 versión 2022</a>
+        </div>
+
+        <div class="footer__social">
+          <a class="footer__icon" href="https://x.com/wolkitservices" target="_blank" rel="noopener" aria-label="X">𝕏</a>
+          <a class="footer__icon" href="https://www.facebook.com/wolkitservices" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a class="footer__icon" href="https://mx.linkedin.com/company/wolk-it-services" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a class="footer__icon" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+        </div>
+
+        <div class="footer__col footer__col--right">
+          <a class="footer__link" href="https://www.wolk-it.com/" target="_blank" rel="noopener">Privacy Policy US Terms of Use</a>
+          <a class="footer__link" href="https://www.wolk-it.com/aviso-privacidad-colombia/" target="_blank" rel="noopener">Aviso de Privacidad Colombia</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="document-modal" id="documentModal" aria-hidden="true">
+    <div class="document-modal__backdrop" data-document-close></div>
+
+    <div class="document-modal__panel" role="dialog" aria-modal="true" aria-labelledby="documentModalTitle">
+      <div class="document-modal__head">
+        <div>
+          <h2 class="document-modal__title" id="documentModalTitle">Documento</h2>
+          <p class="document-modal__meta" id="documentModalMeta">Vista previa desde Drive</p>
+        </div>
+
+        <button class="document-modal__close" type="button" data-document-close aria-label="Cerrar visor">×</button>
+      </div>
+
+      <div class="document-modal__body">
+        <iframe class="document-frame" id="documentFrame" title="Vista previa del documento" allow="autoplay"></iframe>
+      </div>
+
+<div class="document-modal__actions">
+  <a class="btn btn--ghost" id="openDriveLink" href="#" target="_blank" rel="noopener">Abrir en Drive</a>
+  <a class="btn btn--ghost" id="downloadDriveLink" href="#" target="_blank" rel="noopener">Descargar</a>
+  <button class="btn" type="button" data-document-close>Cerrar visor</button>
+</div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const topNav = document.getElementById("topNav");
+    const navPrev = document.querySelector("[data-nav-prev]");
+    const navNext = document.querySelector("[data-nav-next]");
+    const sidebarToggle = document.querySelector("[data-sidebar-toggle]");
+    const mobileMenuButton = document.querySelector("[data-mobile-menu]");
+    const sidebarBackdrop = document.querySelector("[data-sidebar-backdrop]");
+
+    if (topNav && navPrev && navNext) {
+      const getMaxScroll = () => Math.max(0, topNav.scrollWidth - topNav.clientWidth);
+
+      const updateNavButtons = () => {
+        const maxScroll = getMaxScroll();
+        const currentLeft = Math.ceil(topNav.scrollLeft);
+
+        navPrev.disabled = currentLeft <= 1;
+        navNext.disabled = currentLeft >= maxScroll - 1;
+
+        if (maxScroll <= 1) {
+          navPrev.disabled = true;
+          navNext.disabled = true;
+        }
+      };
+
+      const moveTopNav = (direction) => {
+        const maxScroll = getMaxScroll();
+
+        if (maxScroll <= 1) {
+          updateNavButtons();
+          return;
+        }
+
+        const amount = Math.max(160, Math.round(topNav.clientWidth * 0.78));
+        const nextPosition = Math.min(
+          maxScroll,
+          Math.max(0, topNav.scrollLeft + direction * amount)
+        );
+
+        topNav.scrollTo({
+          left: nextPosition,
+          behavior: "smooth"
+        });
+
+        requestAnimationFrame(updateNavButtons);
+        setTimeout(updateNavButtons, 180);
+        setTimeout(updateNavButtons, 360);
+      };
+
+      navPrev.addEventListener("click", () => moveTopNav(-1));
+      navNext.addEventListener("click", () => moveTopNav(1));
+      topNav.addEventListener("scroll", updateNavButtons, { passive: true });
+      window.addEventListener("resize", () => setTimeout(updateNavButtons, 80));
+      window.addEventListener("load", updateNavButtons);
+
+      requestAnimationFrame(updateNavButtons);
+      setTimeout(updateNavButtons, 400);
+    }
+
+    if (sidebarToggle) {
+      sidebarToggle.addEventListener("click", () => {
+        if (window.matchMedia("(max-width: 980px)").matches) {
+          document.body.classList.remove("sidebar-open");
+          if (mobileMenuButton) mobileMenuButton.setAttribute("aria-expanded", "false");
+          return;
+        }
+
+        document.body.classList.toggle("sidebar-collapsed");
+      });
+    }
+
+    if (mobileMenuButton) {
+      mobileMenuButton.addEventListener("click", () => {
+        const isOpen = document.body.classList.toggle("sidebar-open");
+        mobileMenuButton.setAttribute("aria-expanded", String(isOpen));
+      });
+    }
+
+    if (sidebarBackdrop) {
+      sidebarBackdrop.addEventListener("click", () => {
+        document.body.classList.remove("sidebar-open");
+        if (mobileMenuButton) mobileMenuButton.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    const categories = ["Manuales", "Políticas", "Procedimientos", "Formatos", "Registros", "Otros"];
+
+const documents = [
+  {
+    id: "doc-001",
+    title: "Wolk - v1.0 - Definición de Alcance del SGSI",
+    type: "Otros",
+    code: "W-01-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1cWtQL4GYnseWSO5WihQcJYF6dIzDUF9a/view?usp=drive_web",
+    description: "Definición del alcance del Sistema de Gestión de Seguridad de la Información."
+  },
+  {
+    id: "doc-007",
+    title: "Wolk - v2.0 - Plan de Seguridad de la Información",
+    type: "Manuales",
+    code: "W-007-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1yYz5oK3G3J78x8bRfauyQ5Tk4MdLqsMl/view?usp=drive_web",
+    description: "Plan general de seguridad de la información."
+  },
+  {
+    id: "doc-012",
+    title: "Wolk - v1.0 - Inventario de activos de información",
+    type: "Registros",
+    code: "W-012-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1Bu-ztXrJtoAl24mZUG2wvE4RP_3yJ8_9/view?usp=drive_web",
+    description: "Inventario de activos de información registrados."
+  },
+  {
+    id: "doc-013",
+    title: "Wolk - v1.0 - Matriz de Riesgos",
+    type: "Registros",
+    code: "W-013-2024",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/14KSDY1O08bd4Y0_iUwF0o0twLTthiVow/view?usp=drive_web",
+    description: "Matriz para identificación, análisis y seguimiento de riesgos."
+  },
+  {
+    id: "doc-014",
+    title: "Declaración de Aplicabilidad (SoA) v1.0",
+    type: "Registros",
+    code: "W-014-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1zATljv9uFfjHfF0--OOmYpi6dG9Jg8Pj/view?usp=drive_web",
+    description: "Declaración de aplicabilidad de controles."
+  },
+  {
+    id: "doc-017",
+    title: "Wolk - v1.0 - Proceso de Contratación y Desvinculación de Personal",
+    type: "Procedimientos",
+    code: "W-017-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Talento Humano",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1TI42h7p4v1U6kC7Gj_AYOuhvVjKrpT7X/view?usp=drive_web",
+    description: "Proceso para contratación y desvinculación de personal."
+  },
+  {
+    id: "doc-018",
+    title: "Wolk - v1.0 - Matriz SoD",
+    type: "Registros",
+    code: "W-018-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1FRZbExafyF_FptAqI7fdquMFCyZgTjJR/view?usp=drive_web",
+    description: "Matriz de segregación de funciones."
+  },
+  {
+    id: "doc-019",
+    title: "Wolk - v2.0 - Matriz de Evaluación de Proveedores",
+    type: "Registros",
+    code: "W-019-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI / Administración",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1las8Vk1X6r5Notwjtt2fjmYHO2TDeyd8/view?usp=drive_web",
+    description: "Matriz para evaluación y seguimiento de proveedores."
+  },
+  {
+    id: "doc-021",
+    title: "Wolk - v2.0 - Procedimiento de Revisión de Accesos",
+    type: "Procedimientos",
+    code: "W-021-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1lmJY6wytu6P5aKz4KuWCLtIEi9nWrF1g/view?usp=drive_web",
+    description: "Procedimiento para revisión periódica de accesos."
+  },
+  {
+    id: "doc-024",
+    title: "WOLK - v1.0 - Política de Tecnología y Operaciones de TI",
+    type: "Políticas",
+    code: "W-024-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1iOlmicjdVXqd-jyCcaFYTMFTzq17Q1nW/view?usp=drive_web",
+    description: "Política relacionada con tecnología y operaciones de TI."
+  },
+  {
+    id: "doc-025",
+    title: "Wolk - v2.0 - Procedimiento de Gestión de Incidentes de Seguridad",
+    type: "Procedimientos",
+    code: "W-025-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1NqqNdntlT7J_Pkj5j--9TogtkAH50MQy/view?usp=drive_web",
+    description: "Procedimiento para atención y seguimiento de incidentes de seguridad."
+  },
+  {
+    id: "doc-025-1",
+    title: "Wolk - v1.0 - Matriz de Seguimiento a Incidentes",
+    type: "Registros",
+    code: "W-025.1-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1Jdrb4ha4Q-QL21sOYt2e6yy4bjwL3ASD/view?usp=drive_web",
+    description: "Matriz para seguimiento de incidentes de seguridad."
+  },
+  {
+    id: "doc-026",
+    title: "Wolk - v1.0 - Procedimiento de Gestión de Backups",
+    type: "Procedimientos",
+    code: "W-026-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/19OBUEMUCniltzjQoRCq6gpLFo3jNQi_d/view?usp=drive_web",
+    description: "Procedimiento para gestión y control de respaldos."
+  },
+  {
+    id: "doc-028",
+    title: "Wolk - v1.0 - Procedimiento de Gestión de Claves Públicas / Privadas",
+    type: "Procedimientos",
+    code: "W-028-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1tArsK-rGiON5BRztKfyiplQ9vSn2KaSg/view?usp=drive_web",
+    description: "Procedimiento para gestión de claves públicas y privadas."
+  },
+  {
+    id: "doc-029",
+    title: "Wolk - v1.0 - Política de Gestión de Logs",
+    type: "Políticas",
+    code: "W-029-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1SiEGXsxv2eubXikqu-OyjH7BZrx17_38/view?usp=drive_web",
+    description: "Política para generación, revisión y control de logs."
+  },
+  {
+    id: "doc-038",
+    title: "Wolk - v1.0 - Guía de seguridad en el desarrollo y mantenimiento de sistemas",
+    type: "Manuales",
+    code: "W-038-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Desarrollo / SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1QxNWU0O1y35_CS2jDnFdCGYS7d7dv9hz/view?usp=drive_web",
+    description: "Guía para seguridad en desarrollo y mantenimiento de sistemas."
+  },
+  {
+    id: "doc-039",
+    title: "Wolk - v1.0 - Política de Tratamiento de la Información",
+    type: "Políticas",
+    code: "W-039-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1E2lxfj79k9jG7CURekQuURjhGdwMGjmA/view?usp=drive_web",
+    description: "Política para tratamiento de información."
+  },
+  {
+    id: "doc-046",
+    title: "WOLK - v1.0 - Prueba de continuidad",
+    type: "Registros",
+    code: "W-046-2023",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI / Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1_Sny4Gyz7GMWquFqhaPhOwUQ-a5-1epY/view?usp=drive_web",
+    description: "Evidencia o registro de prueba de continuidad."
+  },
+  {
+    id: "doc-051",
+    title: "Wolk - v1.0 - Procedimiento de Acciones Correctivas y de Mejora",
+    type: "Procedimientos",
+    code: "W-051-2024",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1leVXhyfZFkL_h6zRC_j5o3Zx3NqT1ypa/view?usp=drive_web",
+    description: "Procedimiento para acciones correctivas y de mejora."
+  },
+  {
+    id: "doc-054",
+    title: "Wolk - v1.0 - Evidencia de la implementación - ISO 27001 / 27002",
+    type: "Registros",
+    code: "W-054-2024",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1nHI-UIiik2a-yX2W0K9qxynZuH0ay1VN/view?usp=drive_web",
+    description: "Evidencia de implementación relacionada con ISO 27001 / 27002."
+  },
+  {
+    id: "doc-056",
+    title: "Wolk - v1.0 - Plan de Tratamiento de Acciones Correctivas y de Mejora",
+    type: "Registros",
+    code: "W-056-2024",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1vpmnd86juG-ZftlSPJvP5IUiuN1DKoQI/view?usp=drive_web",
+    description: "Plan de tratamiento de acciones correctivas y de mejora."
+  },
+  {
+    id: "doc-058-1",
+    title: "Wolk - v1.0 - Matriz para Inteligencia de Amenazas",
+    type: "Registros",
+    code: "W-58.1-2024",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1CBKVbN4UXj1JhmEikVVdG5dmYL3Zw19a/view?usp=drive_web",
+    description: "Matriz para seguimiento de inteligencia de amenazas."
+  },
+  {
+    id: "doc-060",
+    title: "Wolk - v1.0 - Procedimiento de Revisión y Contratación de Proveedores",
+    type: "Procedimientos",
+    code: "W-60-2024",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "SGSI / Administración",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1OD4Hv4uZiKJlKolYQqYTEDoXDJui3kcd/view?usp=drive_web",
+    description: "Procedimiento para revisión y contratación de proveedores."
+  },
+    {
+    id: "for-op-01",
+    title: "Minuta de Llamada",
+    type: "Formatos",
+    code: "FOR-OP-01",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://docs.google.com/document/d/13-9nkrCRtroM_SU403tFaBLyo5lq4Majd_gkw6biAQ8/edit?usp=drive_web1",
+    description: "Formato para documentar acuerdos, responsables y seguimiento de llamadas."
+  },
+  {
+    id: "for-op-02",
+    title: "Presentación Kick Off",
+    type: "Formatos",
+    code: "FOR-OP-02",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/171DP34fheWBCf8q049HRrcUv3w0wQpIS/view?usp=drive_web2",
+    description: "Formato de presentación para inicio formal de proyecto."
+  },
+  {
+    id: "for-op-03",
+    title: "Acta Constitutiva",
+    type: "Formatos",
+    code: "FOR-OP-03",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1MZf5YEBwuvwBSvRaXaF7OarzPHQ1AFAo/view?usp=drive_web3",
+    description: "Formato para establecer datos generales, alcance y responsables del proyecto."
+  },
+  {
+    id: "for-op-04",
+    title: "Minuta de Trabajo",
+    type: "Formatos",
+    code: "FOR-OP-04",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1TkVNW4_mfgcCQ6DfqYGQy9iKa4zm4CD6/view?usp=drive_web4",
+    description: "Formato para registrar sesiones de trabajo, acuerdos y próximos pasos."
+  },
+  {
+    id: "for-op-05",
+    title: "Informe de Avance Implementación",
+    type: "Formatos",
+    code: "FOR-OP-05",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1XWWX7j1SuGVUKBn8Oa_O4XVmov64X4CO/view?usp=drive_web5",
+    description: "Formato para reportar avances de proyectos de implementación."
+  },
+  {
+    id: "for-op-06",
+    title: "Memoria Técnica Migración Implementación",
+    type: "Formatos",
+    code: "FOR-OP-06",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/11ScVXKdaf5H-bfw9zjufD33tMnylaykR/view?usp=drive_web6",
+    description: "Formato para documentar información técnica de migraciones e implementaciones."
+  },
+  {
+    id: "for-op-07",
+    title: "Informe de Avance de Servicios Administrados",
+    type: "Formatos",
+    code: "FOR-OP-07",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1Kmcli3yltOFyB_dQX1Aqcp93X-BO_qmL/view?usp=drive_web7",
+    description: "Formato para reportar avances y seguimiento de servicios administrados."
+  },
+  {
+    id: "for-op-08",
+    title: "Carta de Cierre de Proyecto",
+    type: "Formatos",
+    code: "FOR-OP-08",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/19wj9oyFNAwhuKgaIaXQKpIpZ4dmrZdkg/view?usp=drive_web8",
+    description: "Formato para formalizar el cierre de un proyecto."
+  },
+  {
+    id: "for-op-09",
+    title: "Gestión de Cambios",
+    type: "Formatos",
+    code: "FOR-OP-09",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Operaciones",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/1u-47Cre3DUREPx6_1TNhS9ClyqleAzhS/view?usp=drive_web9",
+    description: "Formato para documentar solicitudes, evaluación y seguimiento de cambios."
+  },
+  {
+    id: "for-com-01",
+    title: "Propuesta Económica",
+    type: "Formatos",
+    code: "FOR-COM-01",
+    approvalDate: "Pendiente",
+    validity: "Pendiente",
+    owner: "Comercial",
+    status: "Pendiente",
+    url: "https://drive.google.com/file/d/15zadGKB6G735_r12kJ6flT0-2iju5QPb/view?usp=drive_web10",
+    description: "Formato comercial para presentar propuesta económica."
+  }
+];
+
+    const searchInput = document.getElementById("searchInput");
+    const typeFilter = document.getElementById("typeFilter");
+    const statusFilter = document.getElementById("statusFilter");
+    const clearBtn = document.getElementById("clearBtn");
+    const summaryGrid = document.getElementById("summaryGrid");
+    const documentSections = document.getElementById("documentSections");
+    const tableBody = document.getElementById("tableBody");
+    const emptyState = document.getElementById("emptyState");
+    const toast = document.getElementById("toast");
+
+    const documentModal = document.getElementById("documentModal");
+    const documentFrame = document.getElementById("documentFrame");
+    const documentModalTitle = document.getElementById("documentModalTitle");
+    const documentModalMeta = document.getElementById("documentModalMeta");
+    const openDriveLink = document.getElementById("openDriveLink");
+    const downloadDriveLink = document.getElementById("downloadDriveLink");
+
+    function normalize(value) {
+      return value
+        .toString()
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    }
+
+    function escapeHtml(value) {
+      return value
+        .toString()
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function formatDate(value) {
+      if (!value || value === "Pendiente") return "Pendiente";
+
+      const parts = value.split("-");
+      if (parts.length !== 3) return value;
+
+      return `${parts[2]}/${parts[1]}/${parts[0]}`;
+    }
+
+    function resolveStatus(validity, currentStatus) {
+      if (!validity || validity === "Pendiente") return currentStatus || "Pendiente";
+
+      const today = new Date();
+      const limit = new Date(`${validity}T00:00:00`);
+      const diffDays = Math.ceil((limit - today) / 86400000);
+
+      if (diffDays < 0) return "Vencido";
+      if (diffDays <= 30) return "Por vencer";
+
+      return "Vigente";
+    }
+
+    function getTypeClass(type) {
+      const map = {
+        "Manuales": "pill--blue",
+        "Políticas": "pill--info",
+        "Procedimientos": "pill--active",
+        "Formatos": "pill--warning",
+        "Registros": "pill--blue",
+        "Otros": "pill--info"
+      };
+
+      return map[type] || "pill--info";
+    }
+
+    function getStatusClass(status) {
+      if (status === "Vigente") return "pill--active";
+      if (status === "Por vencer") return "pill--warning";
+      if (status === "Vencido") return "pill--danger";
+      return "pill--info";
+    }
+
+    function hasDriveLink(documentItem) {
+      return Boolean(documentItem.url && documentItem.url.trim() && documentItem.url !== "#");
+    }
+
+    function getDrivePreviewUrl(url) {
+      const fileMatch = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+
+      if (fileMatch && fileMatch[1]) {
+        return `https://drive.google.com/file/d/${fileMatch[1]}/preview`;
+      }
+
+      const docMatch = url.match(/docs\.google\.com\/(document|spreadsheets|presentation)\/d\/([^/]+)/);
+
+      if (docMatch && docMatch[1] && docMatch[2]) {
+        return `https://docs.google.com/${docMatch[1]}/d/${docMatch[2]}/preview`;
+      }
+
+      return url;
+    }
+
+    function getDriveDownloadUrl(url) {
+  const fileMatch = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+
+  if (fileMatch && fileMatch[1]) {
+    return `https://drive.google.com/uc?export=download&id=${fileMatch[1]}`;
+  }
+
+  const docMatch = url.match(/docs\.google\.com\/document\/d\/([^/]+)/);
+
+  if (docMatch && docMatch[1]) {
+    return `https://docs.google.com/document/d/${docMatch[1]}/export?format=docx`;
+  }
+
+  const sheetMatch = url.match(/docs\.google\.com\/spreadsheets\/d\/([^/]+)/);
+
+  if (sheetMatch && sheetMatch[1]) {
+    return `https://docs.google.com/spreadsheets/d/${sheetMatch[1]}/export?format=xlsx`;
+  }
+
+  const slideMatch = url.match(/docs\.google\.com\/presentation\/d\/([^/]+)/);
+
+  if (slideMatch && slideMatch[1]) {
+    return `https://docs.google.com/presentation/d/${slideMatch[1]}/export/pptx`;
+  }
+
+  return url;
+}
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("is-visible");
+
+      setTimeout(() => {
+        toast.classList.remove("is-visible");
+      }, 2400);
+    }
+
+    function getFilteredDocuments() {
+      const query = normalize(searchInput.value.trim());
+      const selectedType = typeFilter.value;
+      const selectedStatus = statusFilter.value;
+
+      return documents.filter((documentItem) => {
+        const status = resolveStatus(documentItem.validity, documentItem.status);
+        const searchable = normalize(`
+          ${documentItem.title}
+          ${documentItem.type}
+          ${documentItem.code}
+          ${documentItem.owner}
+          ${status}
+          ${documentItem.approvalDate}
+          ${documentItem.validity}
+          ${documentItem.description}
+        `);
+
+        const matchesQuery = !query || searchable.includes(query);
+        const matchesType = selectedType === "Todos" || documentItem.type === selectedType;
+        const matchesStatus = selectedStatus === "Todos" || status === selectedStatus;
+
+        return matchesQuery && matchesType && matchesStatus;
+      });
+    }
+
+    function renderSummary(filteredDocuments) {
+      const categoryCount = new Set(filteredDocuments.map((documentItem) => documentItem.type)).size;
+      const currentCount = filteredDocuments.filter((documentItem) => resolveStatus(documentItem.validity, documentItem.status) === "Vigente").length;
+      const pendingDates = filteredDocuments.filter((documentItem) => documentItem.approvalDate === "Pendiente" || documentItem.validity === "Pendiente").length;
+
+      summaryGrid.innerHTML = `
+        <div class="summary-card">
+          <strong>${filteredDocuments.length}</strong>
+          <span>Documentos visibles</span>
+        </div>
+
+        <div class="summary-card">
+          <strong>${categoryCount}</strong>
+          <span>Categorías visibles</span>
+        </div>
+
+        <div class="summary-card">
+          <strong>${currentCount}</strong>
+          <span>Documentos vigentes</span>
+        </div>
+
+        <div class="summary-card">
+          <strong>${pendingDates}</strong>
+          <span>Fechas pendientes</span>
+        </div>
+      `;
+    }
+
+    function renderDocumentCard(documentItem) {
+      const status = resolveStatus(documentItem.validity, documentItem.status);
+      const linkAvailable = hasDriveLink(documentItem);
+
+      return `
+        <article class="doc-card">
+          <div class="doc-card__top">
+            <div>
+              <h4 class="doc-title">${escapeHtml(documentItem.title)}</h4>
+              <div class="pills" style="margin-top: 8px;">
+                <span class="pill ${getTypeClass(documentItem.type)}">${escapeHtml(documentItem.type)}</span>
+                <span class="pill ${getStatusClass(status)}">${escapeHtml(status)}</span>
+              </div>
+            </div>
+
+            <span class="doc-code">${escapeHtml(documentItem.code || "S/C")}</span>
+          </div>
+
+          <p class="doc-desc">${escapeHtml(documentItem.description || "Sin descripción registrada.")}</p>
+
+          <div class="doc-meta">
+            <div class="meta-box">
+              <span>Aprobación</span>
+              <strong>${formatDate(documentItem.approvalDate)}</strong>
+            </div>
+
+            <div class="meta-box">
+              <span>Vigencia</span>
+              <strong>${formatDate(documentItem.validity)}</strong>
+            </div>
+
+            <div class="meta-box">
+              <span>Responsable</span>
+              <strong>${escapeHtml(documentItem.owner || "Pendiente")}</strong>
+            </div>
+
+            <div class="meta-box">
+              <span>Drive</span>
+              <strong>${linkAvailable ? "Disponible" : "Pendiente"}</strong>
+            </div>
+          </div>
+
+         <div class="doc-actions">
+  <button class="btn" type="button" data-view-doc="${escapeHtml(documentItem.id)}">Ver documento</button>
+  <a class="btn btn--ghost" href="${escapeHtml(documentItem.url)}" target="_blank" rel="noopener">Abrir Drive</a>
+  <a class="btn btn--ghost" href="${escapeHtml(getDriveDownloadUrl(documentItem.url))}" target="_blank" rel="noopener">Descargar</a>
+</div>
+        </article>
+      `;
+    }
+
+    function renderSections(filteredDocuments) {
+      const visibleCategories = categories
+        .map((category) => ({
+          category,
+          documents: filteredDocuments.filter((documentItem) => documentItem.type === category)
+        }))
+        .filter((group) => group.documents.length > 0);
+
+      emptyState.style.display = filteredDocuments.length ? "none" : "block";
+
+      documentSections.innerHTML = visibleCategories.map((group) => `
+        <section class="doc-section">
+          <div class="doc-section__head">
+            <h3>${escapeHtml(group.category)}</h3>
+            <span class="pill ${getTypeClass(group.category)}">
+              ${group.documents.length} documento${group.documents.length === 1 ? "" : "s"}
+            </span>
+          </div>
+
+          <div class="doc-grid">
+            ${group.documents.map(renderDocumentCard).join("")}
+          </div>
+        </section>
+      `).join("");
+    }
+
+    function renderTable(filteredDocuments) {
+      tableBody.innerHTML = filteredDocuments.map((documentItem) => {
+        const status = resolveStatus(documentItem.validity, documentItem.status);
+
+        return `
+          <tr>
+            <td><strong>${escapeHtml(documentItem.title)}</strong></td>
+            <td><span class="pill ${getTypeClass(documentItem.type)}">${escapeHtml(documentItem.type)}</span></td>
+            <td>${escapeHtml(documentItem.code || "S/C")}</td>
+            <td>${formatDate(documentItem.approvalDate)}</td>
+            <td>${formatDate(documentItem.validity)}</td>
+            <td>${escapeHtml(documentItem.owner || "Pendiente")}</td>
+            <td><span class="pill ${getStatusClass(status)}">${escapeHtml(status)}</span></td>
+            <td>
+             <button type="button" data-view-doc="${escapeHtml(documentItem.id)}">Ver</button>
+  |
+                <a href="${escapeHtml(documentItem.url)}" target="_blank" rel="noopener">Drive</a>
+  |
+                <a href="${escapeHtml(getDriveDownloadUrl(documentItem.url))}" target="_blank" rel="noopener">Descargar</a>
+            </td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function render() {
+      const filteredDocuments = getFilteredDocuments();
+
+      renderSummary(filteredDocuments);
+      renderSections(filteredDocuments);
+      renderTable(filteredDocuments);
+    }
+
+    function openDocumentViewer(documentId) {
+      const documentItem = documents.find((item) => item.id === documentId);
+
+      if (!documentItem || !hasDriveLink(documentItem)) {
+        showToast("El documento no tiene enlace disponible");
+        return;
+      }
+
+      documentModalTitle.textContent = documentItem.title;
+      documentModalMeta.textContent = `${documentItem.code} · ${documentItem.type} · ${documentItem.owner}`;
+      documentFrame.src = getDrivePreviewUrl(documentItem.url);
+      openDriveLink.href = documentItem.url;
+      downloadDriveLink.href = getDriveDownloadUrl(documentItem.url);
+      documentModal.classList.add("is-open");
+      documentModal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeDocumentViewer() {
+      documentModal.classList.remove("is-open");
+      documentModal.setAttribute("aria-hidden", "true");
+      documentFrame.src = "";
+      document.body.style.overflow = "";
+    }
+
+    document.addEventListener("click", (event) => {
+      const viewButton = event.target.closest("[data-view-doc]");
+      const closeButton = event.target.closest("[data-document-close]");
+
+      if (viewButton) {
+        openDocumentViewer(viewButton.getAttribute("data-view-doc"));
+      }
+
+      if (closeButton) {
+        closeDocumentViewer();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && documentModal.classList.contains("is-open")) {
+        closeDocumentViewer();
+      }
+    });
+
+    [searchInput, typeFilter, statusFilter].forEach((element) => {
+      element.addEventListener("input", render);
+      element.addEventListener("change", render);
+    });
+
+    clearBtn.addEventListener("click", () => {
+      searchInput.value = "";
+      typeFilter.value = "Todos";
+      statusFilter.value = "Todos";
+      render();
+    });
+
+    render();
+  </script>
+</body>
+</html>

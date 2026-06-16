@@ -1,0 +1,21 @@
+﻿ID,Nombre,Tipo,Clasificación de la información,Riesgos asociados,Dueño del activo,Criticidad
+A20-2026,Guillermo Rodríguez,Personal interno,,,,
+A19-2025,Trend Micro,Paquetes de software,Confidencial,,Erasmo Esquivel,Alto
+A18-2024,Monday,Aplicaciones,Confidencial,,Arely Joselinne Morales,Alto
+A17-2023,Azur,Aplicaciones,Interna,,Erasmo Esquivel,Alto
+A16-2023,Zendesk,Aplicaciones,Confidencial,,Erasmo Esquivel,Alto
+A15-2023,Oracle Netsuite B,Aplicaciones,Confidencial,,Fernando Carcamo,Alto
+A14-2023,Oracle Netsuite  A,Aplicaciones,Confidencial,1,Erick Cristopher Agueros,Alto
+A13-2023,Hackmetrix App,Aplicaciones,Interna,,Ignacio Mendoza,Alto
+A12-2023,Draw IO,Aplicaciones,Interna,,Erasmo Esquivel,Medio
+A11-2023,AWS,Herramientas de la nube,Pública,2,Erasmo Esquivel,Alto
+A10-2023,Equipos Móviles,Equipos informáticos,Confidencial,,Ignacio Mendoza,Alto
+A9-2023,Rackspace – Servicios | Productos de proveedores,Herramientas de la nube,Confidencial,,Erasmo Esquivel,Alto
+A8-2023,Rackspace,Herramientas de la nube,Interna,,Erasmo Esquivel,Alto
+A7-2023,Ingram Marketplace,Aplicaciones,Interna,,Fernando Carcamo,Alto
+A6-2023,Equipo de computo (Usuario),Equipos informáticos,Confidencial,,Ignacio Mendoza,Alto
+A5-2023,Equipo de Computo,Equipos informáticos,Confidencial,,Erasmo Esquivel,Alto
+A4-2023,Google Workspace (Técnica),Documentación,Interna,1,Erasmo Esquivel,Medio
+A3-2023,Documentación Física,Documentación,Confidencial,2,Maria Isabel Palomino,Alto
+A2-2023,Google Workspace (Financiera),Documentación,Interna,3,Erick Cristopher Agueros,Medio
+A1-2023,Google Workspace (Comercial),Documentación,Interna,3,Fernando Carcamo,Medio

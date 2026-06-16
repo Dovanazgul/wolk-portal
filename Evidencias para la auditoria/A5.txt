@@ -1,0 +1,294 @@
+========== A.5.1 Políticas para la seguridad de la información Cumple 30/30 ==========
+Descripción del control Se recomienda que la política de seguridad de la información y las políticas específicas del tema sean definidas, aprobadas por la administración, publicadas, comunicadas y reconocidas por el personal pertinente y las partes interesadas pertinentes, y revisadas a intervalos planificados y si se producen cambios significativos. Documento final de la Política de Comité de Seguridad de la Información Evidencia de comunicación de la Política de Comité de Seguridad de la Información Evidencia de aprobación de la Política de Comité de Seguridad de la Información Evidencia del histórico de versiones y cambios realizados Documento final de la Política de Seguridad de la Información Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de aprobación de la Política de Seguridad de la Información Documento final de la Política de BYOD Evidencia de comunicación de la Política de BYOD Evidencia de aprobación de la Política de BYOD Documento final de la Política de Escritorios Limpios Evidencia de comunicación de la Política de Escritorios Limpios Evidencia de aprobación de la Política de Escritorios Limpios Documento final de la Política de Tecnología y Operaciones de TI Evidencia de comunicación de la Política de Tecnología y Operaciones de TI Evidencia de aprobación de la Política de Tecnología y Operaciones de TI Documento final de la Política de Gestión de Logs Evidencia de comunicación de la Política de Gestión de Logs Evidencia de aprobación de la Política de Gestión de Logs Documento final de la Política de Desarrollo Seguro Evidencia de comunicación de la Política de Desarrollo Seguro Evidencia de aprobación de la Política de Desarrollo Seguro Documento final de la Política de Tratamiento de la Información Evidencia de comunicación de la Política de Tratamiento de la Información Evidencia de aprobación de la Política de Tratamiento de la Información Documento final de la Política de Seguridad por Capas Evidencia de comunicación de la Política de Seguridad por Capas Evidencia de aprobación de la Política de Seguridad por Capas Otras políticas sobre temas de seguridad propias de la organización PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Políticas para la seguridad de la información ==========
+Descripción del control Se recomienda que la política de seguridad de la información y las políticas específicas del tema sean definidas, aprobadas por la administración, publicadas, comunicadas y reconocidas por el personal pertinente y las partes interesadas pertinentes, y revisadas a intervalos planificados y si se producen cambios significativos. Documento final de la Política de Comité de Seguridad de la Información Evidencia de comunicación de la Política de Comité de Seguridad de la Información Evidencia de aprobación de la Política de Comité de Seguridad de la Información Evidencia del histórico de versiones y cambios realizados Documento final de la Política de Seguridad de la Información Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de aprobación de la Política de Seguridad de la Información Documento final de la Política de BYOD Evidencia de comunicación de la Política de BYOD Evidencia de aprobación de la Política de BYOD Documento final de la Política de Escritorios Limpios Evidencia de comunicación de la Política de Escritorios Limpios Evidencia de aprobación de la Política de Escritorios Limpios Documento final de la Política de Tecnología y Operaciones de TI Evidencia de comunicación de la Política de Tecnología y Operaciones de TI Evidencia de aprobación de la Política de Tecnología y Operaciones de TI Documento final de la Política de Gestión de Logs Evidencia de comunicación de la Política de Gestión de Logs Evidencia de aprobación de la Política de Gestión de Logs Documento final de la Política de Desarrollo Seguro Evidencia de comunicación de la Política de Desarrollo Seguro Evidencia de aprobación de la Política de Desarrollo Seguro Documento final de la Política de Tratamiento de la Información Evidencia de comunicación de la Política de Tratamiento de la Información Evidencia de aprobación de la Política de Tratamiento de la Información Documento final de la Política de Seguridad por Capas Evidencia de comunicación de la Política de Seguridad por Capas Evidencia de aprobación de la Política de Seguridad por Capas Otras políticas sobre temas de seguridad propias de la organización PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.5.2 Funciones y responsabilidades de seguridad de la información Cumple 5/5 ==========
+A.5.2 Funciones y responsabilidades de seguridad de la información Descripción del control Es conveniente que las funciones y responsabilidades de seguridad de la información sean definidas y asignadas de acuerdo con las necesidades de la organización. Documento final de la Política de Comité de Seguridad de la Información Documento final del Descriptivo de roles y responsabilidades Columna completada de "Dueño del activo" del módulo de Activos Columna completada de "Dueño" del módulo de Riesgos PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Funciones y responsabilidades de seguridad de la información ==========
+A.5.2 Funciones y responsabilidades de seguridad de la información Descripción del control Es conveniente que las funciones y responsabilidades de seguridad de la información sean definidas y asignadas de acuerdo con las necesidades de la organización. Documento final de la Política de Comité de Seguridad de la Información Documento final del Descriptivo de roles y responsabilidades Columna completada de "Dueño del activo" del módulo de Activos Columna completada de "Dueño" del módulo de Riesgos PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.5.3 Separación de funciones Cumple 3/3 ==========
+A.5.3 Separación de funciones Descripción del control Se recomienda segregarse los deberes contradictorios y las esferas de responsabilidad en conflicto. Documento final de la Matriz SoD Evidencia de aprobación de la Matriz SoD Evidencia de comunicación de la Matriz SoD
+
+
+========== Separación de funciones ==========
+A.5.3 Separación de funciones Descripción del control Se recomienda segregarse los deberes contradictorios y las esferas de responsabilidad en conflicto. Documento final de la Matriz SoD Evidencia de aprobación de la Matriz SoD Evidencia de comunicación de la Matriz SoD
+
+
+========== A.5.4 Responsabilidades de gestión Cumple 28/28 ==========
+Descripción del control Se sugiere que la administración requiera que todo el personal aplique la seguridad de la información de acuerdo con la política de seguridad de la información establecida, las políticas y procedimientos específicos del tema de la organización. Evidencia de comunicación de la Política de Comité de Seguridad de la Información Evidencia de comunicación del Descriptivo de roles y responsabilidades Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de comunicación de la Política de BYOD Evidencia de comunicación de la Política de Escritorios Limpios Evidencia de comunicación de la Política de Tecnología y Operaciones de TI Evidencia de comunicación de la Política de Gestión de Logs Evidencia de comunicación de la Política de Desarrollo Seguro Evidencia de comunicación de la Política de Tratamiento de la Información Evidencia de comunicación de la Política de Seguridad por Capas Evidencia de comunicación del Procedimiento de Preselección y Selección de Personal Documento final del Proceso de Contratación y Desvinculación de Personal Evidencia de aprobación del Proceso de Contratación y Desvinculación de Personal Evidencia de comunicación del Proceso de Contratación y Desvinculación de Personal Evidencia de comunicación del Procedimiento de Gestión de Accesos Evidencia de comunicación del Procedimiento de Revisión de Accesos Evidencia de comunicación del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de comunicación del Procedimiento de Gestión de Backups Evidencia de comunicación del Procedimiento de Gestión de Cambios Productivos Evidencia de comunicación del Procedimiento de Gestión de Claves Públicas / Privadas Evidencia de comunicación del Procedimiento de Gestión de Logs Evidencia de comunicación del Procedimiento de Gestión de Vulnerabilidades Evidencia de comunicación del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de comunicación del Procedimiento de Acciones Correctivas y de Mejora Evidencia de comunicación del Procedimiento de Anonimización de Datos Personales Evidencia de comunicación del Procedimiento de Gestión de Inteligencia de Amenazas Evidencia de comunicación del Procedimiento de Revisión y Contratación de Proveedores Reporte de Incidente_plantilla
+
+
+========== Responsabilidades de gestión ==========
+Descripción del control Se sugiere que la administración requiera que todo el personal aplique la seguridad de la información de acuerdo con la política de seguridad de la información establecida, las políticas y procedimientos específicos del tema de la organización. Evidencia de comunicación de la Política de Comité de Seguridad de la Información Evidencia de comunicación del Descriptivo de roles y responsabilidades Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de comunicación de la Política de BYOD Evidencia de comunicación de la Política de Escritorios Limpios Evidencia de comunicación de la Política de Tecnología y Operaciones de TI Evidencia de comunicación de la Política de Gestión de Logs Evidencia de comunicación de la Política de Desarrollo Seguro Evidencia de comunicación de la Política de Tratamiento de la Información Evidencia de comunicación de la Política de Seguridad por Capas Evidencia de comunicación del Procedimiento de Preselección y Selección de Personal Documento final del Proceso de Contratación y Desvinculación de Personal Evidencia de aprobación del Proceso de Contratación y Desvinculación de Personal Evidencia de comunicación del Proceso de Contratación y Desvinculación de Personal Evidencia de comunicación del Procedimiento de Gestión de Accesos Evidencia de comunicación del Procedimiento de Revisión de Accesos Evidencia de comunicación del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de comunicación del Procedimiento de Gestión de Backups Evidencia de comunicación del Procedimiento de Gestión de Cambios Productivos Evidencia de comunicación del Procedimiento de Gestión de Claves Públicas / Privadas Evidencia de comunicación del Procedimiento de Gestión de Logs Evidencia de comunicación del Procedimiento de Gestión de Vulnerabilidades Evidencia de comunicación del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de comunicación del Procedimiento de Acciones Correctivas y de Mejora Evidencia de comunicación del Procedimiento de Anonimización de Datos Personales Evidencia de comunicación del Procedimiento de Gestión de Inteligencia de Amenazas Evidencia de comunicación del Procedimiento de Revisión y Contratación de Proveedores Reporte de Incidente_plantilla
+
+
+========== A.5.5 Contacto con las autoridades Cumple 2/2 ==========
+A.5.5 Contacto con las autoridades Descripción del control Se recomienda que la organización establezca y mantenga contacto con las autoridades pertinentes. Documento final de la Política de Seguridad de la Información Evidencia de comunicación con las autoridades definidas
+
+
+========== Contacto con las autoridades ==========
+A.5.5 Contacto con las autoridades Descripción del control Se recomienda que la organización establezca y mantenga contacto con las autoridades pertinentes. Documento final de la Política de Seguridad de la Información Evidencia de comunicación con las autoridades definidas
+
+
+========== A.5.6 Contacto con grupos de interés especial Cumple 2/2 ==========
+A.5.6 Contacto con grupos de interés especial Descripción del control Se recomienda que la organización establezca y mantenga contacto con grupos de interés especial u otros foros especializados en seguridad y asociaciones profesionales. Documento final de la Política de Seguridad de la Información Evidencia de boletines, suscripciones, foros, acceso a las noticias, etcétera con los grupos de interés definidos
+
+
+========== Contacto con grupos de interés especial ==========
+A.5.6 Contacto con grupos de interés especial Descripción del control Se recomienda que la organización establezca y mantenga contacto con grupos de interés especial u otros foros especializados en seguridad y asociaciones profesionales. Documento final de la Política de Seguridad de la Información Evidencia de boletines, suscripciones, foros, acceso a las noticias, etcétera con los grupos de interés definidos
+
+
+========== A.5.7 Inteligencia de amenazas Cumple 3/3 ==========
+A.5.7 Inteligencia de amenazas Descripción del control Se recomienda que la información relacionada con las amenazas a la seguridad de la información se recopile y analice para producir inteligencia sobre amenazas. Documento final del Procedimiento de Gestión de Inteligencia de Amenazas Documento final de la Matriz de Inteligencia de Amenazas Evidencia de la recopilación o registro de la información sobre amenazas
+
+
+========== Inteligencia de amenazas ==========
+A.5.7 Inteligencia de amenazas Descripción del control Se recomienda que la información relacionada con las amenazas a la seguridad de la información se recopile y analice para producir inteligencia sobre amenazas. Documento final del Procedimiento de Gestión de Inteligencia de Amenazas Documento final de la Matriz de Inteligencia de Amenazas Evidencia de la recopilación o registro de la información sobre amenazas
+
+
+========== A.5.8 Seguridad de la información en la gestión de proyectos Cumple 2/2 ==========
+A.5.8 Seguridad de la información en la gestión de proyectos Descripción del control Se recomienda que la seguridad de la información se integre en la gestión de proyectos. Documento final de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Seguridad de la información en la gestión de proyectos ==========
+A.5.8 Seguridad de la información en la gestión de proyectos Descripción del control Se recomienda que la seguridad de la información se integre en la gestión de proyectos. Documento final de la Guía de seguridad en el desarrollo y mantenimiento de los sistemas PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.5.9 Inventario de información y otros activos asociados Cumple 4/4 ==========
+A.5.9 Inventario de información y otros activos asociados Descripción del control Se recomienda elaborar y mantener un inventario de la información y otros activos asociados, incluidos los propietarios. Evidencia de la última versión de la información en el Módulo de Activos Evidencia de aprobación del Inventario de Activos Evidencia de comunicación del Inventario de Activos PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Inventario de información y otros activos asociados ==========
+A.5.9 Inventario de información y otros activos asociados Descripción del control Se recomienda elaborar y mantener un inventario de la información y otros activos asociados, incluidos los propietarios. Evidencia de la última versión de la información en el Módulo de Activos Evidencia de aprobación del Inventario de Activos Evidencia de comunicación del Inventario de Activos PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.5.10 Uso aceptable de la información y otros activos asociados Cumple parcialmente 6/7 ==========
+A.5.10 Uso aceptable de la información y otros activos asociados Descripción del control Se recomienda identificar, documentar y aplicar normas para el uso aceptable y procedimientos para el tratamiento de la información y otros activos asociados. Documento final de la Política de BYOD Documento final de la Política de Escritorios Limpios Documento final de la Política de Tratamiento de la Información Documento final del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de formatos para solicitud de transferencia de información Evidencia de anexo de entrega de equipos propiedad de la empresa PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Uso aceptable de la información y otros activos asociados ==========
+A.5.10 Uso aceptable de la información y otros activos asociados Descripción del control Se recomienda identificar, documentar y aplicar normas para el uso aceptable y procedimientos para el tratamiento de la información y otros activos asociados. Documento final de la Política de BYOD Documento final de la Política de Escritorios Limpios Documento final de la Política de Tratamiento de la Información Documento final del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de formatos para solicitud de transferencia de información Evidencia de anexo de entrega de equipos propiedad de la empresa PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.5.11 Devolución de activos Cumple 3/3 ==========
+A.5.11 Devolución de activos Descripción del control El personal y otras partes interesadas, según corresponda, se sugiere devuelvan todos los activos de la organización en su posesión al cambiar o terminar su empleo, contrato o acuerdo. Documento final del Proceso de Contratación y Desvinculación de Personal Documento final de la Política de BYOD Evidencia del formato de devolución de equipos
+
+
+========== Devolución de activos ==========
+A.5.11 Devolución de activos Descripción del control El personal y otras partes interesadas, según corresponda, se sugiere devuelvan todos los activos de la organización en su posesión al cambiar o terminar su empleo, contrato o acuerdo. Documento final del Proceso de Contratación y Desvinculación de Personal Documento final de la Política de BYOD Evidencia del formato de devolución de equipos
+
+
+========== A.5.12 Clasificación de la información Cumple 2/2 ==========
+A.5.12 Clasificación de la información Descripción del control Se recomienda que la información se clasifique de acuerdo con las necesidades de seguridad de la información de la organización en función de la confidencialidad, la integridad, la disponibilidad y los requisitos pertinentes de las partes interesadas. Documento final de la Política de Seguridad de la Información Evidencia de comunicación de la Política de Seguridad de la Información
+
+
+========== Clasificación de la información ==========
+A.5.12 Clasificación de la información Descripción del control Se recomienda que la información se clasifique de acuerdo con las necesidades de seguridad de la información de la organización en función de la confidencialidad, la integridad, la disponibilidad y los requisitos pertinentes de las partes interesadas. Documento final de la Política de Seguridad de la Información Evidencia de comunicación de la Política de Seguridad de la Información
+
+
+========== A.5.13 Etiquetado de la información Cumple 4/4 ==========
+A.5.13 Etiquetado de la información Descripción del control Se recomienda elaborar y aplicar un conjunto adecuado de procedimientos para el etiquetado de la información de conformidad con el sistema de clasificación de la información adoptado por la organización. Documento final de la Política de Seguridad de la Información Columna completada de "Clasificación de información" del módulo de Activos Evidencia del campo de "Clasificación de esta información" del cuadro de versionado de los documentos Evidencia de otro tipo de etiquetado
+
+
+========== Etiquetado de la información ==========
+A.5.13 Etiquetado de la información Descripción del control Se recomienda elaborar y aplicar un conjunto adecuado de procedimientos para el etiquetado de la información de conformidad con el sistema de clasificación de la información adoptado por la organización. Documento final de la Política de Seguridad de la Información Columna completada de "Clasificación de información" del módulo de Activos Evidencia del campo de "Clasificación de esta información" del cuadro de versionado de los documentos Evidencia de otro tipo de etiquetado
+
+
+========== A.5.14 Transferencia de información Cumple 4/4 ==========
+A.5.14 Transferencia de información Descripción del control Se recomienda que las reglas, procedimientos o acuerdos de transferencia de información estén vigentes para todos los tipos de instalaciones de transferencia dentro de la organización y entre la organización y otras partes. Documento final de la Política de Tratamiento de la Información Documento final del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de las cláusulas sobre la transferencia o intercambio de información dentro de los contratos con colaboradores, clientes y/o proveedores PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Transferencia de información ==========
+A.5.14 Transferencia de información Descripción del control Se recomienda que las reglas, procedimientos o acuerdos de transferencia de información estén vigentes para todos los tipos de instalaciones de transferencia dentro de la organización y entre la organización y otras partes. Documento final de la Política de Tratamiento de la Información Documento final del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de las cláusulas sobre la transferencia o intercambio de información dentro de los contratos con colaboradores, clientes y/o proveedores PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.5.15 Control de acceso Cumple 3/3 ==========
+A.5.15 Control de acceso Descripción del control Se recomienda que las reglas para controlar el acceso físico y lógico a la información y otros activos asociados establezcan e implementen en función de los requisitos comerciales y de seguridad de la información. Documento final de la Política de Seguridad de la Información Documento final del Procedimiento de Gestión de Accesos Documento final del Procedimiento de Revisión de Accesos
+
+
+========== Control de acceso ==========
+A.5.15 Control de acceso Descripción del control Se recomienda que las reglas para controlar el acceso físico y lógico a la información y otros activos asociados establezcan e implementen en función de los requisitos comerciales y de seguridad de la información. Documento final de la Política de Seguridad de la Información Documento final del Procedimiento de Gestión de Accesos Documento final del Procedimiento de Revisión de Accesos
+
+
+========== A.5.16 Gestión de identidades Cumple 6/6 ==========
+A.5.16 Gestión de identidades Descripción del control Se recomienda gestionar el ciclo de vida completo de las identidades. Documento final del Procedimiento de Gestión de Accesos Documento final del Procedimiento de Revisión de Accesos Evidencia de la última versión de la información en el Módulo de Accesos Evidencia de aprobación de la Matriz de Accesos Evidencia de comunicación de la Matriz de Accesos Evidencia del histórico de versiones y cambios realizados
+
+
+========== Gestión de identidades ==========
+A.5.16 Gestión de identidades Descripción del control Se recomienda gestionar el ciclo de vida completo de las identidades. Documento final del Procedimiento de Gestión de Accesos Documento final del Procedimiento de Revisión de Accesos Evidencia de la última versión de la información en el Módulo de Accesos Evidencia de aprobación de la Matriz de Accesos Evidencia de comunicación de la Matriz de Accesos Evidencia del histórico de versiones y cambios realizados
+
+
+========== A.5.17 Información de autenticación Cumple 5/5 ==========
+A.5.17 Información de autenticación Descripción del control La asignación y gestión de la información de autenticación se sugiere se controle mediante un proceso de gestión, que incluya asesorar al personal sobre el manejo adecuado de la información de autenticación. Documento final de la Política de Seguridad de la Información Evidencia del uso de gestor de contraseñas Evidencia del uso de 2FA en los sistemas Módulo de Seguridad de Apps Evidencia de los criterios de creación de contraseñas dentro de los sistemas
+
+
+========== Información de autenticación ==========
+A.5.17 Información de autenticación Descripción del control La asignación y gestión de la información de autenticación se sugiere se controle mediante un proceso de gestión, que incluya asesorar al personal sobre el manejo adecuado de la información de autenticación. Documento final de la Política de Seguridad de la Información Evidencia del uso de gestor de contraseñas Evidencia del uso de 2FA en los sistemas Módulo de Seguridad de Apps Evidencia de los criterios de creación de contraseñas dentro de los sistemas
+
+
+========== A.5.18 Derechos de acceso Cumple 5/5 ==========
+A.5.18 Derechos de acceso Descripción del control Se recomienda que los derechos de acceso a la información y otros activos asociados se aprovisione, revise, modifique y elimine de conformidad con la política y las normas específicas del tema de la organización para el control de acceso. Documento final del Procedimiento de Gestión de Accesos Documento final del Procedimiento de Revisión de Accesos Evidencia de la solicitud de un alta, baja o modificación de accesos Evidencia del cronograma o planificación de las revisiones periódicas de accesos Evidencia del histórico de versiones y cambios realizados
+
+
+========== Derechos de acceso ==========
+A.5.18 Derechos de acceso Descripción del control Se recomienda que los derechos de acceso a la información y otros activos asociados se aprovisione, revise, modifique y elimine de conformidad con la política y las normas específicas del tema de la organización para el control de acceso. Documento final del Procedimiento de Gestión de Accesos Documento final del Procedimiento de Revisión de Accesos Evidencia de la solicitud de un alta, baja o modificación de accesos Evidencia del cronograma o planificación de las revisiones periódicas de accesos Evidencia del histórico de versiones y cambios realizados
+
+
+========== A.5.19 Seguridad de la información en las relaciones con los proveedores Cumple 6/6 ==========
+A.5.19 Seguridad de la información en las relaciones con los proveedores Descripción del control Se recomienda que los procesos y procedimientos se definan e implementen para gestionar los riesgos de seguridad de la información asociados con el uso de los productos o servicios del proveedor. Documento final de la Política de Seguridad de la Información Documento final del Procedimiento de Revisión y Contratación de Proveedores Documento final de la Matriz de Evaluación de Proveedores Evidencia de aprobación de la Matriz de Evaluación de Proveedores Evidencia de comunicación de la Matriz de Evaluación de Proveedores PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Seguridad de la información en las relaciones con los proveedores ==========
+A.5.19 Seguridad de la información en las relaciones con los proveedores Descripción del control Se recomienda que los procesos y procedimientos se definan e implementen para gestionar los riesgos de seguridad de la información asociados con el uso de los productos o servicios del proveedor. Documento final de la Política de Seguridad de la Información Documento final del Procedimiento de Revisión y Contratación de Proveedores Documento final de la Matriz de Evaluación de Proveedores Evidencia de aprobación de la Matriz de Evaluación de Proveedores Evidencia de comunicación de la Matriz de Evaluación de Proveedores PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.5.20 Abordar la seguridad de la información dentro de los acuerdos con proveedores Cumple 1/1 ==========
+A.5.20 Abordar la seguridad de la información dentro de los acuerdos con proveedores Descripción del control Los requisitos pertinentes de seguridad de la información se sugiere establezcan y acuerden con cada proveedor en función del tipo de relación con el proveedor. Contratos / Términos y condiciones con proveedores
+
+
+========== Abordar la seguridad de la información dentro de los acuerdos con proveedores ==========
+A.5.20 Abordar la seguridad de la información dentro de los acuerdos con proveedores Descripción del control Los requisitos pertinentes de seguridad de la información se sugiere establezcan y acuerden con cada proveedor en función del tipo de relación con el proveedor. Contratos / Términos y condiciones con proveedores
+
+
+========== A.5.21 Gestión de la seguridad de la información en la cadena de suministro de las TIC Cumple 1/1 ==========
+A.5.21 Gestión de la seguridad de la información en la cadena de suministro de las TIC Descripción del control Se recomienda definir e implementar procesos y procedimientos para gestionar los riesgos de seguridad de la información asociados con la cadena de suministro de productos y servicios de TIC. Documento final del Procedimiento de Revisión y Contratación de Proveedores
+
+
+========== Gestión de la seguridad de la información en la cadena de suministro de las TIC ==========
+A.5.21 Gestión de la seguridad de la información en la cadena de suministro de las TIC Descripción del control Se recomienda definir e implementar procesos y procedimientos para gestionar los riesgos de seguridad de la información asociados con la cadena de suministro de productos y servicios de TIC. Documento final del Procedimiento de Revisión y Contratación de Proveedores
+
+
+========== A.5.22 Seguimiento, revisión y gestión del cambio de los servicios de los proveedores Cumple 2/2 ==========
+A.5.22 Seguimiento, revisión y gestión del cambio de los servicios de los proveedores Descripción del control Es conveniente que la organización monitoreé, revise, evalué y gestione regularmente el cambio en las prácticas de seguridad de la información de los proveedores y la prestación de servicios. Documento final del Procedimiento de Revisión y Contratación de Proveedores Evidencia del histórico de versiones y cambios realizados
+
+
+========== Seguimiento, revisión y gestión del cambio de los servicios de los proveedores ==========
+A.5.22 Seguimiento, revisión y gestión del cambio de los servicios de los proveedores Descripción del control Es conveniente que la organización monitoreé, revise, evalué y gestione regularmente el cambio en las prácticas de seguridad de la información de los proveedores y la prestación de servicios. Documento final del Procedimiento de Revisión y Contratación de Proveedores Evidencia del histórico de versiones y cambios realizados
+
+
+========== A.5.23 Seguridad de la información para el uso de servicios en la nube Cumple 2/2 ==========
+A.5.23 Seguridad de la información para el uso de servicios en la nube Descripción del control Es conveniente que los procesos de adquisición, uso, gestión y salida de los servicios en la nube establezcan de acuerdo con los requisitos de seguridad de la información de la organización. Documento final de la Política de Seguridad de la Información Contratos / Términos y condiciones con proveedores
+
+
+========== Seguridad de la información para el uso de servicios en la nube ==========
+A.5.23 Seguridad de la información para el uso de servicios en la nube Descripción del control Es conveniente que los procesos de adquisición, uso, gestión y salida de los servicios en la nube establezcan de acuerdo con los requisitos de seguridad de la información de la organización. Documento final de la Política de Seguridad de la Información Contratos / Términos y condiciones con proveedores
+
+
+========== A.5.24 Planificación y preparación de la gestión de incidentes de seguridad de la información Cumple 6/6 ==========
+A.5.24 Planificación y preparación de la gestión de incidentes de seguridad de la información Descripción del control Se sugiere que la organización planifique y prepare para la gestión de incidentes de seguridad de la información mediante la definición, el establecimiento y la comunicación de procesos, roles y responsabilidades de gestión de incidentes de seguridad de la información. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de comunicación del Procedimiento de Gestión de Incidentes de Seguridad Documento final de la Matriz de Seguimiento a Incidentes Evidencia del registro de incidentes Evidencia del medio de comunicación definido para reportar incidentes de seguridad Reporte de Incidente_plantilla
+
+
+========== Planificación y preparación de la gestión de incidentes de seguridad de la información ==========
+A.5.24 Planificación y preparación de la gestión de incidentes de seguridad de la información Descripción del control Se sugiere que la organización planifique y prepare para la gestión de incidentes de seguridad de la información mediante la definición, el establecimiento y la comunicación de procesos, roles y responsabilidades de gestión de incidentes de seguridad de la información. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de comunicación del Procedimiento de Gestión de Incidentes de Seguridad Documento final de la Matriz de Seguimiento a Incidentes Evidencia del registro de incidentes Evidencia del medio de comunicación definido para reportar incidentes de seguridad Reporte de Incidente_plantilla
+
+
+========== A.5.25 Evaluación y decisión sobre eventos de seguridad de la información Cumple 4/4 ==========
+A.5.25 Evaluación y decisión sobre eventos de seguridad de la información Descripción del control Es conveniente que la organización evalué los eventos de seguridad de la información y decidir si se clasifican como incidentes de seguridad de la información. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Módulo de Incidentes Evidencia de la clasificación de eventos de seguridad Reporte de Incidente_plantilla
+
+
+========== Evaluación y decisión sobre eventos de seguridad de la información ==========
+A.5.25 Evaluación y decisión sobre eventos de seguridad de la información Descripción del control Es conveniente que la organización evalué los eventos de seguridad de la información y decidir si se clasifican como incidentes de seguridad de la información. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Módulo de Incidentes Evidencia de la clasificación de eventos de seguridad Reporte de Incidente_plantilla
+
+
+========== A.5.26 Respuesta a incidentes de seguridad de la información Cumple 5/5 ==========
+A.5.26 Respuesta a incidentes de seguridad de la información Descripción del control Se recomienda que los incidentes de seguridad de la información respondan de acuerdo con los procedimientos documentados. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de comunicación del Procedimiento de Gestión de Incidentes de Seguridad Módulo de Incidentes Evidencia del seguimiento dado al incidente Reporte de Incidente_plantilla
+
+
+========== Respuesta a incidentes de seguridad de la información ==========
+A.5.26 Respuesta a incidentes de seguridad de la información Descripción del control Se recomienda que los incidentes de seguridad de la información respondan de acuerdo con los procedimientos documentados. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de comunicación del Procedimiento de Gestión de Incidentes de Seguridad Módulo de Incidentes Evidencia del seguimiento dado al incidente Reporte de Incidente_plantilla
+
+
+========== A.5.27 Aprender de los incidentes de seguridad de la información Cumple 4/4 ==========
+A.5.27 Aprender de los incidentes de seguridad de la información Descripción del control Se recomienda que los conocimientos adquiridos de los incidentes de seguridad de la información se utilicen para fortalecer y mejorar los controles de seguridad de la información. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Documento final de la Matriz de Seguimiento a Incidentes Evidencia del registro de incidentes Reporte de Incidente_plantilla
+
+
+========== Aprender de los incidentes de seguridad de la información ==========
+A.5.27 Aprender de los incidentes de seguridad de la información Descripción del control Se recomienda que los conocimientos adquiridos de los incidentes de seguridad de la información se utilicen para fortalecer y mejorar los controles de seguridad de la información. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Documento final de la Matriz de Seguimiento a Incidentes Evidencia del registro de incidentes Reporte de Incidente_plantilla
+
+
+========== A.5.28 Recopilación de pruebas Cumple 3/3 ==========
+A.5.28 Recopilación de pruebas Descripción del control Se sugiere que la organización establecer e implementar procedimientos para la identificación, recolección, adquisición y preservación de evidencia relacionada con eventos de seguridad de la información. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de la recolección de pruebas de un incidente de seguridad Reporte de Incidente_plantilla
+
+
+========== Recopilación de pruebas ==========
+A.5.28 Recopilación de pruebas Descripción del control Se sugiere que la organización establecer e implementar procedimientos para la identificación, recolección, adquisición y preservación de evidencia relacionada con eventos de seguridad de la información. Documento final del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de la recolección de pruebas de un incidente de seguridad Reporte de Incidente_plantilla
+
+
+========== A.5.29 Seguridad de la información Cumple 6/6 ==========
+A.5.29 Seguridad de la información Descripción del control Se sugiere que la organización planifique cómo mantener la seguridad de la información en un nivel apropiado durante la interrupción. Documento final del Plan de Recuperación ante Desastres Evidencia de aprobación del Plan de Recuperación ante Desastres Evidencia de comunicación del Plan de Recuperación ante Desastres Documento final del Plan de Continuidad Evidencia de aprobación del Plan de Continuidad Evidencia de comunicación del Plan de Continuidad
+
+
+========== Seguridad de la información ==========
+A.5.29 Seguridad de la información Descripción del control Se sugiere que la organización planifique cómo mantener la seguridad de la información en un nivel apropiado durante la interrupción. Documento final del Plan de Recuperación ante Desastres Evidencia de aprobación del Plan de Recuperación ante Desastres Evidencia de comunicación del Plan de Recuperación ante Desastres Documento final del Plan de Continuidad Evidencia de aprobación del Plan de Continuidad Evidencia de comunicación del Plan de Continuidad
+
+
+========== A.5.30 Preparación de las TIC para la continuidad de las actividades Cumple parcialmente 4/5 ==========
+A.5.30 Preparación de las TIC para la continuidad de las actividades Descripción del control La preparación para las TIC se sugiere se planifique, aplique, mantenga y pruebe sobre la base de los objetivos de continuidad de las actividades y los requisitos de continuidad de las TIC. Documento final del Plan de Recuperación ante Desastres Documento final del Plan de Continuidad Documento final del BIA Documento final de la Prueba de Continuidad Evidencia de comunicación de la Prueba de Continuidad
+
+
+========== Preparación de las TIC para la continuidad de las actividades ==========
+A.5.30 Preparación de las TIC para la continuidad de las actividades Descripción del control La preparación para las TIC se sugiere se planifique, aplique, mantenga y pruebe sobre la base de los objetivos de continuidad de las actividades y los requisitos de continuidad de las TIC. Documento final del Plan de Recuperación ante Desastres Documento final del Plan de Continuidad Documento final del BIA Documento final de la Prueba de Continuidad Evidencia de comunicación de la Prueba de Continuidad
+
+
+========== A.5.31 Requisitos legales, reglamentarios y contractuales Cumple 3/3 ==========
+A.5.31 Requisitos legales, reglamentarios y contractuales Descripción del control Los requisitos legales, estatutarios, reglamentarios y contractuales relevantes para la seguridad de la información y el enfoque de la organización para cumplir con estos requisitos deberían identificarse, documentarse y mantenerse actualizados. Documento final de la Matriz de Evaluación de Requisitos Legales y Contractuales Evidencia de aprobación de la Matriz de Evaluación de Requisitos Legales y Contractuales Evidencia de comunicación de la Matriz de Evaluación de Requisitos Legales y Contractuales
+
+
+========== Requisitos legales, reglamentarios y contractuales ==========
+A.5.31 Requisitos legales, reglamentarios y contractuales Descripción del control Los requisitos legales, estatutarios, reglamentarios y contractuales relevantes para la seguridad de la información y el enfoque de la organización para cumplir con estos requisitos deberían identificarse, documentarse y mantenerse actualizados. Documento final de la Matriz de Evaluación de Requisitos Legales y Contractuales Evidencia de aprobación de la Matriz de Evaluación de Requisitos Legales y Contractuales Evidencia de comunicación de la Matriz de Evaluación de Requisitos Legales y Contractuales
+
+
+========== A.5.32 Derechos de propiedad intelectual Cumple 1/1 ==========
+A.5.32 Derechos de propiedad intelectual Descripción del control Se sugiere que la organización implemente procedimientos apropiados para proteger los derechos de propiedad intelectual. Evidencia de las cláusulas sobre la protección de los derechos de la propiedad intelectual dentro de los contratos con colaboradores, clientes y/o proveedores
+
+
+========== Derechos de propiedad intelectual ==========
+A.5.32 Derechos de propiedad intelectual Descripción del control Se sugiere que la organización implemente procedimientos apropiados para proteger los derechos de propiedad intelectual. Evidencia de las cláusulas sobre la protección de los derechos de la propiedad intelectual dentro de los contratos con colaboradores, clientes y/o proveedores
+
+
+========== A.5.33 Protección de registros Cumple 4/4 ==========
+A.5.33 Protección de registros Descripción del control Se recomienda que los registros se protejan contra pérdida, destrucción, falsificación, acceso no autorizado y liberación no autorizada. Documento final de la Política de Gestión de Logs Documento final del Procedimiento de Gestión de Logs Reporte de Incidente_plantilla PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== Protección de registros ==========
+A.5.33 Protección de registros Descripción del control Se recomienda que los registros se protejan contra pérdida, destrucción, falsificación, acceso no autorizado y liberación no autorizada. Documento final de la Política de Gestión de Logs Documento final del Procedimiento de Gestión de Logs Reporte de Incidente_plantilla PR-OP-01 Procedimiento Servicios de Implementación y Operación
+
+
+========== A.5.34 Privacidad y protección de la PII Cumple 5/5 ==========
+A.5.34 Privacidad y protección de la PII Descripción del control Se recomienda que la organización identifique y cumpla con los requisitos relacionados con la preservación de la privacidad y la protección de la PII de acuerdo con las leyes y regulaciones aplicables y los requisitos contractuales. Documento final de la Política de Seguridad de la Información Documento final del Procedimiento de Anonimización de Datos Personales Evidencia de las cláusulas sobre la protección de datos personales dentro de los contratos con colaboradores, clientes y/o proveedores Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de comunicación del Procedimiento de Anonimización de Datos Personales
+
+
+========== Privacidad y protección de la PII ==========
+A.5.34 Privacidad y protección de la PII Descripción del control Se recomienda que la organización identifique y cumpla con los requisitos relacionados con la preservación de la privacidad y la protección de la PII de acuerdo con las leyes y regulaciones aplicables y los requisitos contractuales. Documento final de la Política de Seguridad de la Información Documento final del Procedimiento de Anonimización de Datos Personales Evidencia de las cláusulas sobre la protección de datos personales dentro de los contratos con colaboradores, clientes y/o proveedores Evidencia de comunicación de la Política de Seguridad de la Información Evidencia de comunicación del Procedimiento de Anonimización de Datos Personales
+
+
+========== A.5.35 Revisión independiente de la seguridad de la información Cumple 4/4 ==========
+A.5.35 Revisión independiente de la seguridad de la información Descripción del control El enfoque de la organización para administrar la seguridad de la información y su implementación, incluidas las personas, los procesos y las tecnologías, se sugiere revisar de forma independiente a intervalos planificados o cuando se producen cambios significativos. Documento final del Plan y Programa de Auditoría Módulo de Documentos Centro de Mando Documento final del reporte de auditoría interna
+
+
+========== Revisión independiente de la seguridad de la información ==========
+A.5.35 Revisión independiente de la seguridad de la información Descripción del control El enfoque de la organización para administrar la seguridad de la información y su implementación, incluidas las personas, los procesos y las tecnologías, se sugiere revisar de forma independiente a intervalos planificados o cuando se producen cambios significativos. Documento final del Plan y Programa de Auditoría Módulo de Documentos Centro de Mando Documento final del reporte de auditoría interna
+
+
+========== A.5.36 Cumplimiento de políticas, reglas y estándares de seguridad de la información Cumple 3/3 ==========
+A.5.36 Cumplimiento de políticas, reglas y estándares de seguridad de la información Descripción del control El cumplimiento de la política de seguridad de la información de la organización, las políticas específicas del tema, las reglas y los estándares se sugiere se revisen regularmente. Módulo de Documentos Centro de Mando Evidencia de revisión de un documento del SGSI
+
+
+========== Cumplimiento de políticas, reglas y estándares de seguridad de la información ==========
+A.5.36 Cumplimiento de políticas, reglas y estándares de seguridad de la información Descripción del control El cumplimiento de la política de seguridad de la información de la organización, las políticas específicas del tema, las reglas y los estándares se sugiere se revisen regularmente. Módulo de Documentos Centro de Mando Evidencia de revisión de un documento del SGSI
+
+
+========== A.5.37 Procedimientos operativos documentados Cumple 40/40 ==========
+Descripción del control Se sugiere que los procedimientos operativos para las instalaciones de procesamiento de información se documenten y pongan a disposición del personal que los necesite. Documento final del Procedimiento de Gestión de Accesos Evidencia de comunicación del Procedimiento de Gestión de Accesos Evidencia de aprobación del Procedimiento de Gestión de Accesos Documento final del Procedimiento de Revisión de Accesos Evidencia de comunicación del Procedimiento de Revisión de Accesos Evidencia de aprobación del Procedimiento de Revisión de Accesos Documento final del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de comunicación del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de aprobación del Procedimiento de Gestión de Incidentes de Seguridad Documento final del Procedimiento de Gestión de Backups Evidencia de comunicación del Procedimiento de Gestión de Backups Evidencia de aprobación del Procedimiento de Gestión de Backups Documento final del Procedimiento de Gestión de Cambios Productivos Evidencia de comunicación del Procedimiento de Gestión de Cambios Productivos Evidencia de aprobación del Procedimiento de Gestión de Cambios Productivos Documento final del Procedimiento de Gestión de Claves Públicas / Privadas Evidencia de comunicación del Procedimiento de Gestión de Claves Públicas / Privadas Evidencia de aprobación del Procedimiento de Gestión de Claves Públicas / Privadas Documento final del Procedimiento de Gestión de Logs Evidencia de comunicación del Procedimiento de Gestión de Logs Evidencia de aprobación del Procedimiento de Gestión de Logs Documento final del Procedimiento de Gestión de Vulnerabilidades Evidencia de comunicación del Procedimiento de Gestión de Vulnerabilidades Evidencia de aprobación del Procedimiento de Gestión de Vulnerabilidades Documento final del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de comunicación del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de aprobación del Procedimiento de Transferencia de Información (por medios extraíbles) Documento final del Procedimiento de Acciones Correctivas y de Mejora Evidencia de comunicación del Procedimiento de Acciones Correctivas y de Mejora Evidencia de aprobación del Procedimiento de Acciones Correctivas y de Mejora Documento final del Procedimiento de Anonimización de Datos Personales Evidencia de comunicación del Procedimiento de Anonimización de Datos Personales Evidencia de aprobación del Procedimiento de Anonimización de Datos Personales Documento final del Procedimiento de Gestión de Inteligencia de Amenazas Evidencia de comunicación del Procedimiento de Gestión de Inteligencia de Amenazas Evidencia de aprobación del Procedimiento de Gestión de Inteligencia de Amenazas Documento final del Procedimiento de Revisión y Contratación de Proveedores Evidencia de comunicación del Procedimiento de Revisión y Contratación de Proveedores Evidencia de aprobación del Procedimiento de Revisión y Contratación de Proveedores Documentos finales de otros procedimientos operativos propios de la empresa que estén relacionados al SGSI
+
+
+========== Procedimientos operativos documentados ==========
+Descripción del control Se sugiere que los procedimientos operativos para las instalaciones de procesamiento de información se documenten y pongan a disposición del personal que los necesite. Documento final del Procedimiento de Gestión de Accesos Evidencia de comunicación del Procedimiento de Gestión de Accesos Evidencia de aprobación del Procedimiento de Gestión de Accesos Documento final del Procedimiento de Revisión de Accesos Evidencia de comunicación del Procedimiento de Revisión de Accesos Evidencia de aprobación del Procedimiento de Revisión de Accesos Documento final del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de comunicación del Procedimiento de Gestión de Incidentes de Seguridad Evidencia de aprobación del Procedimiento de Gestión de Incidentes de Seguridad Documento final del Procedimiento de Gestión de Backups Evidencia de comunicación del Procedimiento de Gestión de Backups Evidencia de aprobación del Procedimiento de Gestión de Backups Documento final del Procedimiento de Gestión de Cambios Productivos Evidencia de comunicación del Procedimiento de Gestión de Cambios Productivos Evidencia de aprobación del Procedimiento de Gestión de Cambios Productivos Documento final del Procedimiento de Gestión de Claves Públicas / Privadas Evidencia de comunicación del Procedimiento de Gestión de Claves Públicas / Privadas Evidencia de aprobación del Procedimiento de Gestión de Claves Públicas / Privadas Documento final del Procedimiento de Gestión de Logs Evidencia de comunicación del Procedimiento de Gestión de Logs Evidencia de aprobación del Procedimiento de Gestión de Logs Documento final del Procedimiento de Gestión de Vulnerabilidades Evidencia de comunicación del Procedimiento de Gestión de Vulnerabilidades Evidencia de aprobación del Procedimiento de Gestión de Vulnerabilidades Documento final del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de comunicación del Procedimiento de Transferencia de Información (por medios extraíbles) Evidencia de aprobación del Procedimiento de Transferencia de Información (por medios extraíbles) Documento final del Procedimiento de Acciones Correctivas y de Mejora Evidencia de comunicación del Procedimiento de Acciones Correctivas y de Mejora Evidencia de aprobación del Procedimiento de Acciones Correctivas y de Mejora Documento final del Procedimiento de Anonimización de Datos Personales Evidencia de comunicación del Procedimiento de Anonimización de Datos Personales Evidencia de aprobación del Procedimiento de Anonimización de Datos Personales Documento final del Procedimiento de Gestión de Inteligencia de Amenazas Evidencia de comunicación del Procedimiento de Gestión de Inteligencia de Amenazas Evidencia de aprobación del Procedimiento de Gestión de Inteligencia de Amenazas Documento final del Procedimiento de Revisión y Contratación de Proveedores Evidencia de comunicación del Procedimiento de Revisión y Contratación de Proveedores Evidencia de aprobación del Procedimiento de Revisión y Contratación de Proveedores Documentos finales de otros procedimientos operativos propios de la empresa que estén relacionados al SGSI

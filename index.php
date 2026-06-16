@@ -274,7 +274,7 @@ require_once __DIR__ . '/includes/sidebar.php';
             <article class="super-panel">
                 <div class="super-panel__head">
                     <div>
-                        <h2>Lectura rápida</h2>
+                        <h2>Lectura</h2>
                         <p>
                             Una vista sencilla para saber dónde conviene entrar primero.
                         </p>

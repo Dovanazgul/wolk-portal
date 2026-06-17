@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 $databaseConfig = [
-    'host' => '18.222.238.5',
-    'port' => 80,
+    'host' => 'localhost',
+    'port' => 3306,
     'database' => 'wolk_nexus',
     'username' => 'root',
     'password' => 'Wolkero*012',

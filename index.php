@@ -158,7 +158,7 @@ if (!auth_check()) {
             </section>
         </main>
 
-        <?php require __DIR__ . '/var/www/html/wolk-portal/includes/footer-content.php'; ?>
+        <?php require __DIR__ . '/includes/footer-content.php'; ?>
     </div>
     </body>
 
